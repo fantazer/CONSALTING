@@ -1,0 +1,130 @@
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_fonts.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "variable/_helper.styl"
+@import "variable/_default.styl"
+@import "variable/_elements.styl"
+@import "variable/_constant.styl"
+@import "../module/**/*"
+
+body
+	@extend .type--main
+	font-family $v-font
+	color $main-text-color
+	line-height 1.2
+	letter-spacing 0.01em
+
+.main-cont
+	center(1200px,10px)
+
+.section
+	padding: 90px 0
+
+.section-title
+	font-size: 46px
+	font-weight: bold
+	up()
+	font-family: Pusia
+	text-align: center
+	margin-bottom: 80px
+	position: relative
+	&:before
+		content ""
+		position: absolute
+		width:
+
+.service
+	f()
+	br(20px)
+	//box-shadow 0px 12px 29px 0px rgba(0,0,0,0.07)
+.service__el
+	padding: 0 30px
+	border-right 1px solid #ededed
+	&:last-child
+		border 0
+.service__title
+	font-size: 26px
+	font-weight: bold
+	up()
+	font-family: Pusia
+	margin-bottom: 40px
+.service__list-el
+	display: inline-block
+	margin-bottom: 15px
+	color #666c72
+	position: relative
+	padding-left: 20px
+	&:before
+		content ""
+		size 5px
+		background: $red
+		position: absolute
+		left: 0
+		top 5px
+		round()
+
+.service__el-icon
+	margin-bottom: 20px
+	//flex(mid)
+	.icon
+		size 80px
+
+.section-title-head
+	flex(mid)
+	margin-bottom: 10px
+
+.section--under
+	padding-top: 0
+
+.about__title
+	font-size: 26px
+	font-family: Pusia
+	margin-bottom: 20px
+.about__text
+	line-height: 1.6
+.about
+	f()
+	justify-content: space-between
+.about__img
+	bg-full()
+	padding: 20%
+
+.about__content
+	flex(between)
+	width: 100%
+
+.about__wrap
+	width: 40%
+
+.slider-el
+	color white
+	flex(mid)
+	display flex!important
+	margin 10px 0
+
+//for custom navigation
+.slider-control
+	round()
+	flex(mid)
+	tr(all)
+	size 40px
+	background: white
+	position: absolute
+	top 50%
+	margin-top: -20px
+	box-shadow 0px 2px 10px #c5c2c2
+	z-index 10
+	cp()
+	&:hover
+		background: $red
+		.icon
+			fill white
+	.icon
+		size 14px
+
+.slider-control--left
+	left -20px
+.slider-control--right
+	right -20px

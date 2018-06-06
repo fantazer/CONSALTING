@@ -1,0 +1,115 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+.section.section--service
+	.main-cont
+		//.section-title Наши услуги
+		.service
+			.service__el
+				.service__el-icon
+					+icon("business-presentation","icon")
+				.service__title Консалтинг
+				.service__list
+					-
+						var items = [
+							'Внедрение ИТ процессов',
+							'Подготовка к сертификации',
+							'Управление ИТ активами',
+							'Обеспечение устойчивости',
+							'Организация ServiceDesk',
+							'Стратегический консалтинг'
+							];
+					each item in items
+						a(href="#").service__list-el #{item}
+			.service__el
+				.service__el-icon
+					+icon("analytics","icon")
+				.service__title Аудит ИТ
+				.service__list
+					-
+						var items = [
+						'Внедрение ИТ процессов',
+						'Подготовка к сертификации',
+						'Управление ИТ активами',
+						'Обеспечение устойчивости',
+						'Организация ServiceDesk',
+						'Стратегический консалтинг'
+						];
+					each item in items
+						a(href="#").service__list-el #{item}
+			.service__el
+				.service__el-icon
+					+icon("line-graph","icon")
+				.service__title Автоматизация
+				.service__list
+					-
+						var items = [
+						'Внедрение ИТ процессов',
+						'Подготовка к сертификации',
+						'Управление ИТ активами',
+						'Обеспечение устойчивости',
+						'Организация ServiceDesk',
+						'Стратегический консалтинг'
+						];
+					each item in items
+						a(href="#").service__list-el #{item}
+			.service__el
+				.service__el-icon
+					+icon("briefcase","icon")
+				.service__title Учебный центр
+				.service__list
+					-
+						var items = [
+						'Внедрение ИТ процессов',
+						'Подготовка к сертификации',
+						'Управление ИТ активами',
+						'Обеспечение устойчивости',
+						'Организация ServiceDesk',
+						'Стратегический консалтинг'
+						];
+					each item in items
+						a(href="#").service__list-el #{item}
+
+.section.section--about.section--gray
+	.main-cont
+		.section-title-row
+			.section-title-head
+				img(src="img/title-head.png", alt="")
+			.section-title Сфера нашей деятельности
+		.slider-wrap
+			.slider-control.slider-control--left
+				+icon("arrow-left","icon")
+			.slider-control.slider-control--right
+				+icon("arrow-right","icon")
+				.slider-item
+
+			.about.slider-custom
+				.about__el
+					.about__content
+						.about__chart
+							.canvas
+								canvas#barChart(width="600" height="500")
+						.about__wrap
+							.about__title Консалтинг и внедрение процессов
+							.about__text Повысить имидж вашей компании и расширить возможности международного сотрудничества поможет внедрение сервисного подхода к управлению Информационными Технологиями компании. Компания ИТ Эксперт с 2002 года занимается внедрением передовых подходов и методов в области ИТ управления. Мы готовы поделиться с вами мировым и собственным опытом, накопленным нашими специалистами за многие годы практики.
+				.about__el
+					.about__content
+						.about__chart
+							.canvas
+								canvas#radarChart(width="600" height="600")
+						.about__wrap
+							.about__title Консалтинг и внедрение процессов
+							.about__text Повысить имидж вашей компании и расширить возможности международного сотрудничества поможет внедрение сервисного подхода к управлению Информационными Технологиями компании. Компания ИТ Эксперт с 2002 года занимается внедрением передовых подходов и методов в области ИТ управления. Мы готовы поделиться с вами мировым и собственным опытом, накопленным нашими специалистами за многие годы практики.
+				.about__el
+					.about__content
+						.about__chart
+							.canvas
+								canvas#lineChart(width="600" height="500")
+						.about__wrap
+							.about__title Консалтинг и внедрение процессов
+							.about__text Повысить имидж вашей компании и расширить возможности международного сотрудничества поможет внедрение сервисного подхода к управлению Информационными Технологиями компании. Компания ИТ Эксперт с 2002 года занимается внедрением передовых подходов и методов в области ИТ управления. Мы готовы поделиться с вами мировым и собственным опытом, накопленным нашими специалистами за многие годы практики.и.
+
+include ./block_html/_script.pug
+
