@@ -72,7 +72,7 @@ include block_html/_include.pug
 					each item in items
 						a(href="#").service__list-el #{item}
 
-.section.section--about.section--gray
+.section.section--about
 	.main-cont
 		.section-title-row
 			.section-title-head
@@ -94,6 +94,7 @@ include block_html/_include.pug
 						.about__wrap
 							.about__title Консалтинг и внедрение процессов
 							.about__text Повысить имидж вашей компании и расширить возможности международного сотрудничества поможет внедрение сервисного подхода к управлению Информационными Технологиями компании. Компания ИТ Эксперт с 2002 года занимается внедрением передовых подходов и методов в области ИТ управления. Мы готовы поделиться с вами мировым и собственным опытом, накопленным нашими специалистами за многие годы практики.
+							a(href="#").about-get Подробнее
 				.about__el
 					.about__content
 						.about__chart
@@ -102,6 +103,7 @@ include block_html/_include.pug
 						.about__wrap
 							.about__title Консалтинг и внедрение процессов
 							.about__text Повысить имидж вашей компании и расширить возможности международного сотрудничества поможет внедрение сервисного подхода к управлению Информационными Технологиями компании. Компания ИТ Эксперт с 2002 года занимается внедрением передовых подходов и методов в области ИТ управления. Мы готовы поделиться с вами мировым и собственным опытом, накопленным нашими специалистами за многие годы практики.
+							a(href="#").about-get Подробнее
 				.about__el
 					.about__content
 						.about__chart
@@ -110,6 +112,26 @@ include block_html/_include.pug
 						.about__wrap
 							.about__title Консалтинг и внедрение процессов
 							.about__text Повысить имидж вашей компании и расширить возможности международного сотрудничества поможет внедрение сервисного подхода к управлению Информационными Технологиями компании. Компания ИТ Эксперт с 2002 года занимается внедрением передовых подходов и методов в области ИТ управления. Мы готовы поделиться с вами мировым и собственным опытом, накопленным нашими специалистами за многие годы практики.и.
+							a(href="#").about-get Подробнее
+
+.section.section--news.section--gray
+	.header-sqr
+	.bg-text NEWS
+
+	.filter.filter--white
+	.main-cont
+		.section-title-row
+			.section-title-head
+				img(src="img/title-head.png", alt="")
+			.section-title Новости
+		.news
+			- for (var i=0;i<6;i++)
+				.news__el
+					.news__title Lorem ipsum dolor sit.
+					.news__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloribus eligendi impedit magnam maiores natus numquam ratione suscipit voluptatibus! Consequuntur debitis dolor dolore expedita magnam quae reiciendis, repellat totam veritatis!
+					.news-footer
+						a(href="#").news-get Подробнее
+						.news-date 10.06.2012
 
 include ./block_html/_script.pug
 

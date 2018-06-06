@@ -30,6 +30,7 @@ body
 	text-align: center
 	margin-bottom: 80px
 	position: relative
+	color black
 	&:before
 		content ""
 		position: absolute
@@ -82,8 +83,11 @@ body
 	font-size: 26px
 	font-family: Pusia
 	margin-bottom: 20px
+	padding-bottom: 20px
+	border-bottom 1px solid $border-color
 .about__text
 	line-height: 1.6
+	margin-bottom: 40px
 .about
 	f()
 	justify-content: space-between
@@ -94,7 +98,6 @@ body
 .about__content
 	flex(between)
 	width: 100%
-
 .about__wrap
 	width: 40%
 
@@ -125,6 +128,71 @@ body
 		size 14px
 
 .slider-control--left
-	left -20px
+	left -60px
 .slider-control--right
-	right -20px
+	right -60px
+
+.about-get
+	@extend .btn--light
+	@extend .btn--md
+	@extend .btn--fixsize
+
+.section--about
+	padding-top: 0px
+
+.header-sqr
+	width: 20vw
+	height: 80%
+	border 20px solid $red
+	position: absolute
+	top 10%
+	left: calc(50% -20vw)
+
+.section--gray
+	//background: #d8d8d8
+
+.news
+	flex(between)
+	fw()
+.news__el
+	padding: 30px
+	background: white
+	width: 31%
+	bsh()
+	margin-bottom: 20px
+.news__title
+	font-weight: bold
+	margin-bottom: 20px
+.news__text
+	line-height: 1.6
+	margin-bottom: 20px
+.news-footer
+	flex(between)
+.news-get
+	color black
+.news-date
+	padding: 5px 10px
+	background #f1f1f1
+	color #949494
+
+.section--news
+	bg-full()
+	position: relative
+	.header-sqr
+		left calc(50% - 40vw)
+		height: 90%
+		transform skewX(0deg)
+		//background: $red
+.filter
+	position: absolute
+	width: 100%
+	height: 100%
+	top 0
+	left: 0
+
+.bg-text
+	font-family: Pusia
+	position: absolute
+	font-size: 320px
+	color #f1f1f1
+	right: 0
