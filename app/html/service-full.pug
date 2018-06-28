@@ -1,0 +1,76 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header--main
+	+header()
+
+.bread-wrap
+	.main-cont
+		.bread-wrap__title Главная / Новости
+
+.main-content
+	//.news-main__figure
+	.main-cont
+		.service-full
+			.service-full
+				.service-full__chart
+					canvas(id="barChart"  height="400" width="450")
+				.service-full__info
+					.service-full__title Обеспечение устойчивости
+					.service-full__content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+					.service-full__advance
+						p Для обеспечения предоставления критичных ИТ-услуг в случае чрезвычайных ситуаций должен быть проведен комплекс организационных и технических мероприятий, ядром которых являются планы обеспечения непрерывности. Внедрение процесса управления непрерывностью предоставления ИТ-услуг обеспечивает гарантии восстановления предоставления ИТ-услуг в случае возникновения чрезвычайных ситуаций в соответствии с потребностями, условиями и временными рамками, согласованными с бизнесом.
+						p Для обеспечения предоставления критичных ИТ-услуг в случае чрезвычайных ситуаций должен быть проведен комплекс организационных и технических мероприятий, ядром которых являются планы обеспечения непрерывности. Внедрение процесса управления непрерывностью предоставления ИТ-услуг обеспечивает гарантии восстановления предоставления ИТ-услуг в случае возникновения чрезвычайных
+
+.section.section-customer
+	.bg-text customers
+	.main-cont
+		.section-title-row
+			.section-title-head
+				img(src="img/title-head.png", alt="")
+			.section-title Наши клиенты
+		.customers
+			- for (var i=1;i<16;i++)
+				.customers__el
+					img(src="img/customers.png", alt="")
+
+.section.section-contact
+	.section-contact--skew
+	.bg-text Order
+	.main-cont
+		.contact-form
+			.contact-form__title Свяжитесь с нами
+			.contact-form__wrap
+				.contact-form__cont
+					form.validate-form( action="javascript:void(null);")
+						.form-wrap
+							.form-inputs
+								.input-row
+									input(type="text" name="name" placeholder="Ваше имя").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваш телефон").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваша почта").input
+							.form-text
+								.input-row
+									textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+						.agree-row
+							.check-el
+								label.style-label.style-label--checkbox
+									input(type="checkbox" name="agree").sytle-input
+									.sytle-input-element
+										+icon("checked","icon-check")
+									.sytle-input-text=text
+							.agree-row__text Согласен с
+								a(href="#") условиями обработки персональных данных
+						.input-row.input-row--sand
+							input(type="submit" value="Отправить заявку")
++footer()
+
+include ./block_html/_script.pug
+

@@ -1,0 +1,93 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header--main
+	+header()
+
+.bread-wrap
+	.main-cont
+		.bread-wrap__title Главная / Контакты
+
+.section.section-advant.section-advant--about
+	.advant
+		.advant-numb
+			.advant-numb__wrap
+				.advant-numb__val 15
+				.advant-numb__text лет
+		.advant-cont
+			.advant-cont__wrap
+				.advant-title Компания IT Expert Consulting
+				.advant-text
+					p Компания IT Expert создана в 2002 г. группой экспертов, стоявших у истоков развития систем корпоративного управления и ИТ-менеджмента в России. Основной концепцией деятельности компании стало распространение передового международного опыта в сфере ИТ-управления и применение лучших знаний и практик для эффективного решения задач развития ИТ и бизнеса на российских предприятиях.
+					p Целью нашей компании является развитие экспертных подходов и методов в области ИТ управления и предоставление нашим клиентам не только теоретических знаний, но и практической помощи по их внедрению на основе передовых мировых стандартов, российской практики и собственного опыта, накопленного нашими специалистами при выполнении масштабных проектов для компаний-заказчиков различных отраслей и форм собственности, с учетом индивидуальных требований руководства и специфики деятельности.
+					.advant-el-wrap
+						.advant-el
+							.advant-el__val 13 ITIL Experts
+							.advant-el__text В нашей команде работает 13 ITIL Experts.
+						.advant-el
+							.advant-el__val ISO 20000
+							.advant-el__text Мы подготовили российскую версию стандарта ISO 20000 2015 года
+.main-content
+	//.news-main__figure
+	.main-cont
+		.mission
+			.mission__el
+				.mission__title Наша миссия
+				.mission__text Мы реализуем свою миссию посредством оказания профессиональных консалтинговых, тренинговых, аутсорсинговых и аудиторских услуг. Наш подход заключается в применении передового опыта и различных современных методов в области управления информационными технологиями. Свои услуги мы несем с помощью единой команды профессионалов. Мы стремимся сохранить лидирующие позиции на рынке, поддерживая высочайшее качество оказываемых нами услуг.
+			.mission__el.mission__el--mark
+				.mission__title Наши принципы
+				.mission__text Мы содействуем организациям в повышении эффективности применения современных информационных технологий. Свои услуги мы несем с помощью единой команды профессионалов, поддерживая высочайшее качество оказываемых нами услуг. Мы применяем передовой опыт и различные современные методы в области управления информационными технологиями. Мы помогаем совершенствовать методы, инструменты и системы управления ИТ.
+			.mission__el
+				.mission__title Наши правила
+				.mission__text Мы делимся собственным профессиональным опытом в сфере информационных технологий, предлагая нашим клиентам то, что опробовали сами. Для нас самое важное - качество и надежность наших услуг. Единство нашей команды помогает решить все задачи.
+		.sert
+			.sert__title Мы используем мировые стандарты по ИТ:
+			.sert-wrap
+				- for (var i=0;i<12;i++)
+					.sert__el 
+						.sert__el-icon
+							+icon("user","icon")
+						.sert__el-text COBIT® (Control Objectives for Information and related Technology)
+		.sert
+			.sert__title Сертификаты наших экспертов:
+			.sert-wrap
+				- for (var i=0;i<12;i++)
+					.sert__el
+						.sert__el-icon
+							+icon("policy","icon")
+						.sert__el-text COBIT® (Control Objectives for Information and related Technology)
+.section.section-contact
+	.section-contact--skew
+	.bg-text Order
+	.main-cont
+		.contact-form
+			.contact-form__title Свяжитесь с нами
+			.contact-form__wrap
+				.contact-form__cont
+					form.validate-form( action="javascript:void(null);")
+						.form-wrap
+							.form-inputs
+								.input-row
+									input(type="text" name="name" placeholder="Ваше имя").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваш телефон").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваша почта").input
+							.form-text
+								.input-row
+									textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+						.agree-row
+							.check-el
+								label.style-label.style-label--checkbox
+									input(type="checkbox" name="agree").sytle-input
+									.sytle-input-element
+										+icon("checked","icon-check")
+									.sytle-input-text=text
+							.agree-row__text Согласен с
+								a(href="#") условиями обработки персональных данных
+						.input-row
+							input(type="submit" value="Отправить заявку")
++footer()
+
+include ./block_html/_script.pug
+

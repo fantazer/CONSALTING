@@ -1,0 +1,48 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header--main
+	+header()
+
+.bread-wrap
+	.main-cont
+		.bread-wrap__title Главная / Новости
+
+.main-content
+	.news-main__figure
+	.main-cont
+		.news
+			.news-main
+				.news-main__date
+					.news-main__date-val 15 июн
+				.news-main__info
+					.news-main__title Аккредитация PEOPLECERT
+					.news-main__content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+
+.section.section--news.section--gray
+	//.header-sqr
+	.bg-text NEWS
+	.filter.filter--white
+	.main-cont
+		.section-title-row
+			.section-title-head
+				img(src="img/title-head.png", alt="")
+			.section-title Новости
+		.news
+			- for (var i=0;i<6;i++)
+				.news__el
+					.news__title Lorem ipsum dolor sit.
+					.news__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloribus eligendi impedit magnam maiores natus numquam ratione suscipit voluptatibus! Consequuntur debitis dolor dolore expedita magnam quae reiciendis, repellat totam veritatis!
+					.news-footer
+						a(href="#").news-get Подробнее
+						.news-date 10.06.2012
+
++footer()
+
+include ./block_html/_script.pug
+

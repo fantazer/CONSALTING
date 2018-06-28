@@ -77,7 +77,7 @@ h1
 h2
 	@extend .type--lg
 h3
-	@extend .type--main
+	@extend .type--lg
 h4
 	@extend .type--sm
 h5
@@ -92,7 +92,7 @@ a
 
 p
 	@extend .type--main
-
+	line-height: 1.6
 .link--mark
 	color $red
 	&:hover
@@ -153,6 +153,9 @@ btnStyleLight(br-btn,color-btn)
 		size 10px
 
 .btn--md
+	+below(768px)
+		padding: 10px 20px
+		font-size:12px
 	@extend .btn
 	font-size 15px
 	padding 20px 35px
@@ -286,11 +289,11 @@ button
 	margin-bottom 10px
 	placeholder(#888888)
 	tr(all)
-	box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.2)
+	//box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.2)
 	border-radius 4px
-	background-color #eeecf3
-	/*&:focus
-		border 1px solid blue*/
+	//background-color #eeecf3
+	&:focus
+		border 1px solid $red
 
 .style-label
 	display flex

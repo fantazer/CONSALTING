@@ -1,0 +1,93 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header--main
+	+header()
+
+.bread-wrap
+	.main-cont
+		.bread-wrap__title Главная / Новости
+
+.main-content
+	.main-cont
+		.customer-about
+			.customer-about__info
+				.customer-about__title Внешэкoномбанк
+				.customer-about__text
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam enim et impedit ipsa minus obcaecati quasi repellat veniam vero.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid aspernatur blanditiis delectus ea earum eius excepturi itaque iure nemo nesciunt nobis numquam odio, omnis perferendis placeat, sequi. Accusamus autem blanditiis, corporis delectus harum illo molestiae nostrum placeat reprehenderit sint.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit placeat praesentium voluptate voluptatibus. Ab commodi consectetur, debitis, dolorum earum eius eos impedit laudantium magni minima nesciunt perspiciatis quae quibusdam sunt vero. Architecto, commodi dolor earum esse eum illo iure nemo non quasi saepe tempore tenetur voluptatem? Deleniti modi quo vero?
+			.customer-about__img
+				img(src="img/customers.png", alt="")
+		.customer-project
+			.customer-project__title Описание проекта
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam enim et impedit ipsa minus obcaecati quasi repellat veniam vero.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid aspernatur blanditiis delectus ea earum eius excepturi itaque iure nemo nesciunt nobis numquam odio, omnis perferendis placeat, sequi. Accusamus autem blanditiis, corporis delectus harum illo molestiae nostrum placeat reprehenderit sint.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit placeat praesentium voluptate voluptatibus. Ab commodi consectetur, debitis, dolorum earum eius eos impedit laudantium magni minima nesciunt perspiciatis quae quibusdam sunt vero. Architecto, commodi dolor earum esse eum illo iure nemo non quasi saepe tempore tenetur voluptatem? Deleniti modi quo vero?
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam enim et impedit ipsa minus obcaecati quasi repellat veniam vero.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid aspernatur blanditiis delectus ea earum eius excepturi itaque iure nemo nesciunt nobis numquam odio, omnis perferendis placeat, sequi. Accusamus autem blanditiis, corporis delectus harum illo molestiae nostrum placeat reprehenderit sint.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit placeat praesentium voluptate voluptatibus. Ab commodi consectetur, debitis, dolorum earum eius eos impedit laudantium magni minima nesciunt perspiciatis quae quibusdam sunt vero. Architecto, commodi dolor earum esse eum illo iure nemo non quasi saepe tempore tenetur voluptatem? Deleniti modi quo vero?
+			.customer-project__tag
+				.customer-project__tag-title.type--md.title Инновации:
+				.customer-project__tag-el стратегическое партнерство с IT Expert
+				.customer-project__tag-el повышение качества поддержки пользователей ИТ-услуг
+				.customer-project__tag-el переход от разработки ИТ-систем к созданию ИТ-услуг
+				.customer-project__tag-el разработка и введение в действие процессов управления доступностью ИТ-услуг
+				.customer-project__tag-el управление безопасностью ИТ-услуг
+				.customer-project__tag-el разработка и введение в действие процессов управления инцидентами
+				.customer-project__tag-el разработка и введение в действие процессов управления уровнем ИТ-услуг
+				.customer-project__tag-el управление финансированием ИТ-деятельности
+
+		.customer-project
+			.customer-project__title Пресса о проекте
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam enim et impedit ipsa minus obcaecati quasi repellat veniam vero.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid aspernatur blanditiis delectus ea earum eius excepturi itaque iure nemo nesciunt nobis numquam odio, omnis perferendis placeat, sequi. Accusamus autem blanditiis, corporis delectus harum illo molestiae nostrum placeat reprehenderit sint.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit placeat praesentium voluptate voluptatibus. Ab commodi consectetur, debitis, dolorum earum eius eos impedit laudantium magni minima nesciunt perspiciatis quae quibusdam sunt vero. Architecto, commodi dolor earum esse eum illo iure nemo non quasi saepe tempore tenetur voluptatem? Deleniti modi quo vero?
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam enim et impedit ipsa minus obcaecati quasi repellat veniam vero.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid aspernatur blanditiis delectus ea earum eius excepturi itaque iure nemo nesciunt nobis numquam odio, omnis perferendis placeat, sequi. Accusamus autem blanditiis, corporis delectus harum illo molestiae nostrum placeat reprehenderit sint.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit placeat praesentium voluptate voluptatibus. Ab commodi consectetur, debitis, dolorum earum eius eos impedit laudantium magni minima nesciunt perspiciatis quae quibusdam sunt vero. Architecto, commodi dolor earum esse eum illo iure nemo non quasi saepe tempore tenetur voluptatem? Deleniti modi quo vero?
+			.press
+				.press__row
+					.press__title Автор:
+					.press__val Валерий Чашкин
+				.press__row
+					.press__title Журнал:
+					.press__val Intelligent Enterprise
+				.press__row
+					.press__title Номер публикации:
+					.press__val № Спецвыпуск 1
+.section.section-contact
+	.section-contact--skew
+	.bg-text Order
+	.main-cont
+		.contact-form
+			.contact-form__title Свяжитесь с нами
+			.contact-form__wrap
+				.contact-form__cont
+					form.validate-form( action="javascript:void(null);")
+						.form-wrap
+							.form-inputs
+								.input-row
+									input(type="text" name="name" placeholder="Ваше имя").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваш телефон").input
+								.input-row
+									input(type="text" name="mail" placeholder="Ваша почта").input
+							.form-text
+								.input-row
+									textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+						.agree-row
+							.check-el
+								label.style-label.style-label--checkbox
+									input(type="checkbox" name="agree").sytle-input
+									.sytle-input-element
+										+icon("checked","icon-check")
+									.sytle-input-text=text
+							.agree-row__text Согласен с
+								a(href="#") условиями обработки персональных данных
+						.input-row
+							input(type="submit" value="Отправить заявку")
++footer()
+
+include ./block_html/_script.pug
+

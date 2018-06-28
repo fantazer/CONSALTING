@@ -1,3 +1,45 @@
 mixin footer()
 	//block footer
+	.footer-wrap
+		.main-cont
+			.footer
+				.footer__col
+					.footer__logo
+						+icon("logo-white","icon")
+				.footer__col
+					.footer__title Услуги
+					.footer__list
+						a(href="#").footer__list__el Консалтинг
+						a(href="#").footer__list__el Аудит ит
+						a(href="#").footer__list__el Автоматизация
+						a(href="#").footer__list__el Учебный Центр
+				.footer__col
+					.footer__title О компании
+					.footer__list
+						a(href="#").footer__list__el Новости
+						a(href="#").footer__list__el Комманда
+						a(href="#").footer__list__el Хронология
+						a(href="#").footer__list__el Мы в СМИ
+				.footer__col
+					.footer-phone 8(495)981-57-10
+					.footer-adress ул.Каланчевская 15 оф 402
+					.footer-adress Троицкий проспект 95 корп 1 оф 705
+					.footer-soc
+						a(href="#").footer-soc__el
+							+icon("soc-facebook","icon")
+						a(href="#").footer-soc__el
+							+icon("soc-twitter","icon")
+						a(href="#").footer-soc__el
+							+icon("soc-vk","icon")
+	.footer-sub
+		.footer-sub__text © ITEXPERT.RU, 2014-2017 г. | Все права защищены ITIL® и PRINCE2® — зарегистрированные торговые марки компании AXELOS Limited.
+	//modal template
+	.modal-layer
+		.modal-cont
+			.modal-filter
+			.modal-wrap
+				.modal(data-modal="trueMsg")
+					.modal-content.modal-content--truesend
+						img(src="img/mail-true.svg", alt="")
+						.modal-text-truesend Ваша заявка принята!
 	//block footer end

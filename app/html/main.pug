@@ -1,15 +1,24 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
-+header()
 
+.main-section(style="background-image:url('/img/item-10.jpg')")
+	.main-section-filter
+	.header-sqr
+	.header-main-page
+		+header()
+	.main-section-cont
+		.main-section-title КОНСАЛТИНГ <br> ВНЕДРЕНИЕ ПРОЦЕССОВ
+		.main-section-title-sub Мы предоставим вам максимально выгодные условия сотрудничества
+		.btn-row--mid
+			.btn--md.btn--mark.btn--fixsize Подробнее
 .section.section--service
 	.main-cont
 		//.section-title Наши услуги
 		.service
 			.service__el
 				.service__el-icon
-					+icon("business-presentation","icon")
+					+icon("group","icon")
 				.service__title Консалтинг
 				.service__list
 					-
@@ -25,7 +34,7 @@ include block_html/_include.pug
 						a(href="#").service__list-el #{item}
 			.service__el
 				.service__el-icon
-					+icon("analytics","icon")
+					+icon("user","icon")
 				.service__title Аудит ИТ
 				.service__list
 					-
@@ -41,7 +50,7 @@ include block_html/_include.pug
 						a(href="#").service__list-el #{item}
 			.service__el
 				.service__el-icon
-					+icon("line-graph","icon")
+					+icon("settings","icon")
 				.service__title Автоматизация
 				.service__list
 					-
@@ -57,7 +66,7 @@ include block_html/_include.pug
 						a(href="#").service__list-el #{item}
 			.service__el
 				.service__el-icon
-					+icon("briefcase","icon")
+					+icon("desk","icon")
 				.service__title Учебный центр
 				.service__list
 					-
@@ -114,10 +123,62 @@ include block_html/_include.pug
 							.about__text Повысить имидж вашей компании и расширить возможности международного сотрудничества поможет внедрение сервисного подхода к управлению Информационными Технологиями компании. Компания ИТ Эксперт с 2002 года занимается внедрением передовых подходов и методов в области ИТ управления. Мы готовы поделиться с вами мировым и собственным опытом, накопленным нашими специалистами за многие годы практики.и.
 							a(href="#").about-get Подробнее
 
+.section.section-advant
+	.advant
+		.advant-numb
+			.advant-numb__wrap
+				.advant-numb__val 15
+				.advant-numb__text лет
+
+		.advant-cont
+			.advant-cont__wrap
+				.advant-title Компания IT Expert Consulting
+				.advant-text
+					p Компания IT Expert создана в 2002 г. группой экспертов, стоявших у истоков развития систем корпоративного управления и ИТ-менеджмента в России. Основной концепцией деятельности компании стало распространение передового международного опыта в сфере ИТ-управления и применение лучших знаний и практик для эффективного решения задач развития ИТ и бизнеса на российских предприятиях.
+					p Целью нашей компании является развитие экспертных подходов и методов в области ИТ управления и предоставление нашим клиентам не только теоретических знаний, но и практической помощи по их внедрению на основе передовых мировых стандартов, российской практики и собственного опыта, накопленного нашими специалистами при выполнении масштабных проектов для компаний-заказчиков различных отраслей и форм собственности, с учетом индивидуальных требований руководства и специфики деятельности.
+					.advant-el-wrap
+						.advant-el
+							.advant-el__val 13 ITIL Experts
+							.advant-el__text В нашей команде работает 13 ITIL Experts.
+						.advant-el
+							.advant-el__val ISO 20000
+							.advant-el__text Мы подготовили российскую версию стандарта ISO 20000 2015 года
+
+.section.section-worker
+	.header-sqr
+	.bg-text MANS
+	.filter.filter--white
+	.main-cont
+		.section-title-row
+			.section-title-head
+				img(src="img/title-head.png", alt="")
+			.section-title Наши сотрудники
+			.worker
+				- for (var i=0;i<8;i++)
+					a(href="#").worker__el
+						.worker__el__img-wrap
+							.worker__el-img(style="background-image:url('img/worker.jpg')")
+						.worker__el-content
+							.worker__el-name Павел Кудрявцев
+							.worker__el-state Управляющий партнер
+							.worker__el-text Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.
+
+.section.section-customer
+	.bg-text customers
+	.main-cont
+		.section-title-row
+			.section-title-head
+				img(src="img/title-head.png", alt="")
+			.section-title Наши клиенты
+		.customers
+			- for (var i=1;i<16;i++)
+				.customers__el
+					img(src="img/customers.png", alt="")
+			
+
 .section.section--news.section--gray
 	.header-sqr
 	.bg-text NEWS
-
 	.filter.filter--white
 	.main-cont
 		.section-title-row
@@ -133,5 +194,6 @@ include block_html/_include.pug
 						a(href="#").news-get Подробнее
 						.news-date 10.06.2012
 
++footer()
 include ./block_html/_script.pug
 

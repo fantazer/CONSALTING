@@ -1,0 +1,55 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header--main
+	+header()
+
+.bread-wrap
+	.main-cont
+		.bread-wrap__title Главная / Контакты
+
+.main-content
+	//.news-main__figure
+	.main-cont
+		.contact
+			.contact__phone +7 (495) 981-57-10
+			.contact__adres г. Москва Каланчевская ул. 15, офис 402
+			.contact__adres г. Архангельск Троицкий проспект 95 корп 1 оф 705
+			.contact__text
+				p Целью нашей компании является развитие экспертных подходов и методов в области ИТ управления и предоставление нашим клиентам не только теоретических знаний, но и практической помощи по их внедрению на основе передовых мировых стандартов, российской практики и собственного опыта, накопленного нашими специалистами при выполнении масштабных проектов для компаний-заказчиков различных отраслей и форм собственности, с учетом индивидуальных требований руководства и специфики деятельности.
+
+.section.section-contact
+	.section-contact--skew
+	.bg-text Order
+	.main-cont
+		.contact-form
+			.contact-form__title Свяжитесь с нами
+			.contact-form__wrap
+				.contact-form__cont
+					form.validate-form( action="javascript:void(null);")
+						.form-wrap
+							.form-inputs
+								.input-row
+									input(type="text" name="name" placeholder="Ваше имя").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваш телефон").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваша почта").input
+							.form-text
+								.input-row
+									textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+						.agree-row
+							.check-el
+								label.style-label.style-label--checkbox
+									input(type="checkbox" name="agree").sytle-input
+									.sytle-input-element
+										+icon("checked","icon-check")
+									.sytle-input-text=text
+							.agree-row__text Согласен с
+								a(href="#") условиями обработки персональных данных
+						.input-row
+							input(type="submit" value="Отправить заявку")
++footer()
+
+include ./block_html/_script.pug
+

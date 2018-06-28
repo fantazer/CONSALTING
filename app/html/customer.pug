@@ -1,0 +1,57 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header--main
+	+header()
+
+.bread-wrap
+	.main-cont
+		.bread-wrap__title Главная / Новости
+
+
+.section.section-customer.section-customer--list
+	.bg-text customers
+	.main-cont
+		.customers.customers--list
+			- for (var i=1;i<16;i++)
+				.customers__el
+					img(src="img/customers.png", alt="")
+					.customers__el-text ЗАО "Райффайзенбанк" - дочерний банк Райффайзен Банка Интернациональ АГ. Первый Райффайзенбанк открылся в Австрии в 1886 году, и сегодня банковская ...
+					a(href="#").customers__el-link подробнее
+
+
+.section.section-contact
+	.section-contact--skew
+	.bg-text Order
+	.main-cont
+		.contact-form
+			.contact-form__title Свяжитесь с нами
+			.contact-form__wrap
+				.contact-form__cont
+					form.validate-form( action="javascript:void(null);")
+						.form-wrap
+							.form-inputs
+								.input-row
+									input(type="text" name="name" placeholder="Ваше имя").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваш телефон").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваша почта").input
+							.form-text
+								.input-row
+									textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+						.agree-row
+							.check-el
+								label.style-label.style-label--checkbox
+									input(type="checkbox" name="agree").sytle-input
+									.sytle-input-element
+										+icon("checked","icon-check")
+									.sytle-input-text=text
+							.agree-row__text Согласен с
+								a(href="#") условиями обработки персональных данных
+						.input-row
+							input(type="submit" value="Отправить заявку")
++footer()
+
+include ./block_html/_script.pug
+

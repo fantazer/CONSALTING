@@ -1,56 +1,49 @@
 mixin header()
 	//block header
-	.main-section(style="background-image:url('/img/item-10.jpg')")
-		.main-section-filter
-		.header-sqr
-		.header
-			.header-layer
-				.main-cont
-					.header-wrap
-						a(href="#").header-logo Logo
-							//img(src="img/logo-main.svg", alt="")
-						.header-nav
-							.header-nav__el
-									a(href="#").header-nav__el-link.header-nav__el-link--mark Главная
-							.header-nav__el
-								.header-nav__el-link-wrap
-									a(href="#").header-nav__el-link Услуги
-									.header-nav__el-icon
-										+icon("arrow-down","icon-el")
-								.header-nav__sub
-									.coner-wrap
-										.window-coner-top
-										.header-nav__sub-wrap
-											a(href="#").header-nav__sub-el Консалтинг
-											a(href="#").header-nav__sub-el Аудит ИТ
-											a(href="#").header-nav__sub-el Автоматизация
-											a(href="#").header-nav__sub-el Учебный центр
-							.header-nav__el
-								.header-nav__el-link-wrap
-									a(href="#").header-nav__el-link О компании
-									.header-nav__el-icon
-										+icon("arrow-down","icon-el")
-								.header-nav__sub
-									.coner-wrap
-										.window-coner-top
-										.header-nav__sub-wrap
-											a(href="#").header-nav__sub-el Новости
-											a(href="#").header-nav__sub-el Комманда
-											a(href="#").header-nav__sub-el Хронология
-											a(href="#").header-nav__sub-el Мы в СМИ
-							.header-nav__el
-								a(href="#").header-nav__el-link Заказчики
-							.header-nav__el
-								a(href="#").header-nav__el-link Контакты
-						//.header-contact
-							.header-phone
-								a(href="tel:8(495)123-12-12") 8(495)123-12-12
-						.menu-toggle
-							+icon("menu","icon-el")
-		.main-section-cont
-
-			.main-section-title КОНСАЛТИНГ <br> ВНЕДРЕНИЕ ПРОЦЕССОВ
-			.main-section-title-sub Мы предоставим вам максимально выгодные условия сотрудничества
-			.btn-row--mid
-				.btn--md.btn--mark.btn--fixsize Подробнее
+	.header
+		.header-layer
+			.main-cont
+				.header-wrap
+					a(href="#").header-logo
+						//img(src="img/logo.png", alt="")
+						+icon("logo-white","icon")
+					.header-nav
+						.header-nav__el
+							a(href="#").header-nav__el-link.header-nav__el-link--mark Главная
+						.header-nav__el
+							.header-nav__el-link-wrap
+								a(href="#").header-nav__el-link Услуги
+								.header-nav__el-icon
+									+icon("arrow-down","icon-el")
+							.header-nav__sub
+								.coner-wrap
+									.window-coner-top
+									.header-nav__sub-wrap
+										a(href="#").header-nav__sub-el Консалтинг
+										a(href="#").header-nav__sub-el Аудит ИТ
+										a(href="#").header-nav__sub-el Автоматизация
+										a(href="#").header-nav__sub-el Учебный центр
+						.header-nav__el
+							.header-nav__el-link-wrap
+								a(href="#").header-nav__el-link О компании
+								.header-nav__el-icon
+									+icon("arrow-down","icon-el")
+							.header-nav__sub
+								.coner-wrap
+									.window-coner-top
+									.header-nav__sub-wrap
+										a(href="#").header-nav__sub-el Новости
+										a(href="#").header-nav__sub-el Комманда
+										a(href="#").header-nav__sub-el Хронология
+										a(href="#").header-nav__sub-el Мы в СМИ
+						.header-nav__el
+							a(href="#").header-nav__el-link Заказчики
+						.header-nav__el
+							a(href="#").header-nav__el-link Контакты
+					//.header-contact
+						.header-phone
+							a(href="tel:8(495)123-12-12") 8(495)123-12-12
+					.menu-toggle
+						+icon("menu","icon-el icon-el--open")
+						+icon("close","icon-el icon-el--close")
 	//block header end

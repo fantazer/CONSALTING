@@ -11,7 +11,9 @@
 	font-size: 20px
 	color white
 	text-align: left
-	
+	.icon
+		fill $red
+		size 120px
 .header-phone
 	up()
 	font-size: 20px
@@ -35,7 +37,11 @@
 	fw()
 	fl()
 	margin-top: 5%
+	padding: 0 20px
+
 .main-section-title
+	+below(640px)
+		font-size: 24px
 	up()
 	color white
 	font-size: 4vw
@@ -59,7 +65,8 @@
 		width: 100px
 	height: 40px
 	width: 15%
-	flex(mid)
+	f()
+	align-items: center
 	img
 		width: 100%
 
@@ -77,19 +84,24 @@
 	.icon-el
 		cp()
 		size 20px
-		fill white
-
+		fill black
+	.icon-el--close
+		display: none
+.menu-toggle--close
+	.icon-el--close
+		display: block
+	.icon-el--open
+		display: none
 .header-nav__el
 	+below(1200px)
 		font-size: 12px
 	+below(1024px)
 		width: 100%
-		text-align: center
-		background: grey
 		font-size: 14px
+		pl20px
 	font-size: 14px
 	position: relative
-	text-transform: uppercase
+	//text-transform: uppercase
 	font-weight:bold
 	.icon-el
 		size 10px
@@ -119,29 +131,43 @@
 		color darken(white,15)
 .header-layer
 	padding: 10px 0
-
 .header-nav__el-icon
+	.icon-el
+		fill black
 	+below(1024px)
 		cp()
 		flex(mid)
 		background: darken(grey,20)
 		size: 60px
+		display: none
 		.icon-el
 			size 15px
 
 .header-nav
 	+below(1024px)
-		position: absolute
-		top: 100%
-		width: 100%
-		left: 0
-		fw()
-		display: none
+		position: fixed
+		top 61px
+		right: 0
+		width: 300px
+		height: calc(100vh - 61px)
+		background: white
+		justify-content:initial
+		transform translateX(100%)
+		tr(all)
+		z-index 1100
+		fl()
 	+above(1024px)
 		display: flex !important
 	width: 60%
 	justify-content:space-around
 
+.header-nav--open
+	+below(640px)
+		width: 100%
+	transform translateX(0%)
+	overflow-y: auto
+	.header-nav__el-link
+		color black!important
 .header-nav__sub
 	+below(1024px)
 		transform translateY(0px)
@@ -154,13 +180,14 @@
 		opacity 1!important
 		visibility visible!important
 		transition initial
+		border 0
 		.window-coner-top
 			display: none
 	tr(all)
 	transform translateY(20px)
 	position: absolute
 	width: 180px
-	top: 100%
+	top: calc(100% + 12px)
 	left: 50%
 	margin-left: -90px
 	border-radius 4px
@@ -168,8 +195,11 @@
 	background-color #ffffff
 	opacity 0
 	visibility hidden
+	z-index 100
 
 .header-nav__sub-wrap
+	+below(1024px)
+		background: #f2f2f2
 	position: relative
 	background: white
 
@@ -180,7 +210,8 @@
 
 .header-nav__sub-el
 	+below(1024px)
-		padding: 10px 0
+		padding: 10px 20px
+		font-weight:200
 	tr(all)
 	padding: 20px
 	display: block
@@ -193,4 +224,20 @@
 		border-bottom: 0
 
 .header-nav__el-link--mark
+	+below(1024px)
+		border-bottom 1px solid $border-color
 	border-bottom 2px solid $red
+
+.section-advant--about
+	padding-top: 0!important
+
+.header-main-page
+	.menu-toggle
+		.icon-el
+			fill white
+	.header-logo
+		.icon
+			fill white
+	.header-nav__el-icon
+		.icon-el
+			fill white

@@ -1,0 +1,93 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header--main
+	+header()
+
+.bread-wrap
+	.main-cont
+		.bread-wrap__title Главная / Услуги
+
+.main-content
+	.main-content--skew
+	.service-main
+		.main-cont
+			.service-main__el
+				.service-main__info
+					.service-main__title Консалтинг и внедрение процессов
+					.service-main__list
+							-
+								var items = [
+								'Внедрение ИТ процессов',
+								'Подготовка к сертификации',
+								'Управление ИТ активами',
+								'Обеспечение устойчивости',
+								'Организация ServiceDesk',
+								'Стратегический консалтинг'
+								];
+							each item in items
+								a(href="#").service-main__list-el #{item}
+				.service-main__content
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+			.service-main__el
+				.service-main__content
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+				.service-main__info
+					.service-main__title Системы контроля и оценка процессов
+					.service-main__list
+						-
+							var items = [
+							'Внедрение ИТ процессов',
+							'Подготовка к сертификации',
+							'Управление ИТ активами',
+							'Обеспечение устойчивости',
+							'Организация ServiceDesk',
+							'Стратегический консалтинг'
+							];
+						each item in items
+							a(href="#").service-main__list-el #{item}
+			.service-main__el
+				.service-main__info
+					.service-main__title Автоматизация деятельности
+					.service-main__list
+						-
+							var items = [
+							'Внедрение ИТ процессов',
+							'Подготовка к сертификации',
+							'Управление ИТ активами',
+							'Обеспечение устойчивости',
+							'Организация ServiceDesk',
+							'Стратегический консалтинг'
+							];
+						each item in items
+							a(href="#").service-main__list-el #{item}
+				.service-main__content
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam consectetur cupiditate, esse fuga ipsam iure nobis vel velit!
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi aperiam architecto corporis cumque cupiditate dignissimos earum facere ipsam natus nihil odit optio, repudiandae, saepe sequi sint tempore totam vero voluptate voluptates! Adipisci consequatur delectus, illo magnam perferendis praesentium quae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores earum eum fugiat ipsa labore maiores maxime minima, nobis numquam perspiciatis. Blanditiis minima, quibusdam.
+
+.section.section-customer
+	.bg-text customers
+	.main-cont
+		.section-title-row
+			.section-title-head
+				img(src="img/title-head.png", alt="")
+			.section-title Наши клиенты
+		.customers
+			- for (var i=1;i<16;i++)
+				.customers__el
+					img(src="img/customers.png", alt="")
+
++footer()
+include ./block_html/_script.pug
+

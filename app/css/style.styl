@@ -16,47 +16,81 @@ body
 	line-height 1.2
 	letter-spacing 0.01em
 
+$font = Pusia
+//$font = Ubuntu
+
+ul,ol
+	line-height: 1.6
+	color #6d6680
+	li
+		margin-bottom: 10px
 .main-cont
 	center(1200px,10px)
 
 .section
+	+below(768px)
+		padding: 30px 0
 	padding: 90px 0
 
 .section-title
-	font-size: 46px
+	+below(768px)
+		font-size: 22px
+		margin-bottom: 30px
+	font-size: 38px
 	font-weight: bold
 	up()
-	font-family: Pusia
+	font-family: $font
 	text-align: center
 	margin-bottom: 80px
 	position: relative
-	color black
+	color #18364a
 	&:before
 		content ""
 		position: absolute
-		width:
+.title
+	color #18364a
+	font-weight:bold
+	font-family:$font
 
 .service
+	+below(1024px)
+		fw()
+		justify-content: space-between
+		max-width 768px
+		margin-left: auto
+		margin-right: auto
 	f()
 	br(20px)
 	//box-shadow 0px 12px 29px 0px rgba(0,0,0,0.07)
 .service__el
+	+below(1024px)
+		width: 48%
+		margin-bottom: 20px
+		border 0px
+	+below(480px)
+		width: 100%
 	padding: 0 30px
 	border-right 1px solid #ededed
+	width: 25%
 	&:last-child
 		border 0
 .service__title
-	font-size: 26px
+	+below(640px)
+		margin-bottom: 20px
+	font-size: 18px
 	font-weight: bold
 	up()
-	font-family: Pusia
+	font-family: $font
 	margin-bottom: 40px
 .service__list-el
-	display: inline-block
+	display: block
 	margin-bottom: 15px
 	color #666c72
 	position: relative
 	padding-left: 20px
+	line-height: 1.6
+	font-size: 12px
+
 	&:before
 		content ""
 		size 5px
@@ -70,8 +104,10 @@ body
 	margin-bottom: 20px
 	//flex(mid)
 	.icon
+		+below(640px)
+			size 60px
 		size 80px
-
+		//fill $red
 .section-title-head
 	flex(mid)
 	margin-bottom: 10px
@@ -80,8 +116,10 @@ body
 	padding-top: 0
 
 .about__title
-	font-size: 26px
-	font-family: Pusia
+	@extend .title
+	@extend .type--lg
+
+	font-family: $font
 	margin-bottom: 20px
 	padding-bottom: 20px
 	border-bottom 1px solid $border-color
@@ -96,9 +134,24 @@ body
 	padding: 20%
 
 .about__content
+	+below(1024px)
+		fw()
+		max-width 640px
+		margin-left: auto
+		margin-right: auto
 	flex(between)
 	width: 100%
+.about__chart
+	+below(1024px)
+		width: 100%
+		margin-bottom: 20px
+	+below(768px)
+		canvas
+			width: 100% !important
+			height: 80vw!important
 .about__wrap
+	+below(1024px)
+		width: 100%
 	width: 40%
 
 .slider-el
@@ -109,6 +162,8 @@ body
 
 //for custom navigation
 .slider-control
+	+below(1280px)
+		display: none
 	round()
 	flex(mid)
 	tr(all)
@@ -133,7 +188,9 @@ body
 	right -60px
 
 .about-get
-	@extend .btn--light
+	+below(480px)
+		width: 100%
+	@extend .btn--mark
 	@extend .btn--md
 	@extend .btn--fixsize
 
@@ -141,6 +198,8 @@ body
 	padding-top: 0px
 
 .header-sqr
+	+below(640px)
+		display: none
 	width: 20vw
 	height: 80%
 	border 20px solid $red
@@ -152,14 +211,27 @@ body
 	//background: #d8d8d8
 
 .news
+	+below(640px)
+		padding-top: 0
 	flex(between)
 	fw()
+	padding-top: 30px
+	align-items: stretch
 .news__el
+	+below(1024px)
+		width: 48%
+	+below(640px)
+		width: 100%
+	f()
+	fl()
 	padding: 30px
 	background: white
 	width: 31%
 	bsh()
 	margin-bottom: 20px
+	tr(all)
+	&:hover
+		box-shadow: 0px 10px 15px darken(#e5e5e5,5)
 .news__title
 	font-weight: bold
 	margin-bottom: 20px
@@ -167,6 +239,7 @@ body
 	line-height: 1.6
 	margin-bottom: 20px
 .news-footer
+	margin-top: auto
 	flex(between)
 .news-get
 	color black
@@ -191,8 +264,1130 @@ body
 	left: 0
 
 .bg-text
-	font-family: Pusia
+	font-family: $font
 	position: absolute
 	font-size: 320px
 	color #f1f1f1
 	right: 0
+
+.advant
+	+below(640px)
+		padding: 0 10px
+	f()
+	height: 100%
+	min-height: 100vh
+
+.advant-numb
+	+below(640px)
+		display: none
+	width: 50%
+.advant-cont
+	+below(640px)
+		width: 100%
+		align-items: flex-start
+	flex(mid)
+	width: 50%
+.advant-title
+	+below(768px)
+		font-size: 24px
+	font-size: 46px
+	font-weight: bold
+	up()
+	font-family: $font
+	margin-bottom: 30px
+	position: relative
+	color #18364a
+
+.advant-cont__wrap
+	+below(640px)
+		width: 100%
+	width: 70%
+.advant-numb
+	background: $red
+	position: relative
+.advant-numb__val
+	font-size: 40vw
+	line-height: 1
+	font-weight: bold
+	position: absolute
+	right: -10%
+	top 0%
+	opacity .6
+	color #18364a
+.advant-numb__text
+	font-size: 20vw
+	font-weight: bold
+	line-height: 1
+	position: absolute
+	right: 0
+	top 25%
+	opacity .4
+.advant-numb__wrap
+	color #8d0017
+
+.advant-el
+	+below(640px)
+		&:last-child
+			margin-bottom: 0
+	margin-bottom: 30px
+	padding-left: 20px
+	border-left 5px solid $red
+.advant-el__val
+	font-weight: bold
+	up()
+	font-family: $font
+	font-size: 28px
+	margin-bottom: 10px
+	//color $red
+
+.section-advant
+	+below(768px)
+		padding-bottom: 0
+.section-customer
+	position: relative
+	overflow hidden
+	.bg-text
+		up()
+		width: 100%
+		text-align: center
+		top 30%
+		font-size: 20vw
+.customers
+	+below(640px)
+		margin-left: -5px
+		margin-right: -5px
+	f()
+	fw()
+.customers__el
+	+below(768px)
+		width: calc(100%/3)
+	+below(640px)
+		width: calc(100%/4 - 10px)
+		margin: 5px
+	width: 20%
+	filter grayscale(1);
+	opacity .4
+	tr(all)
+	flex(mid)
+	margin-bottom: 20px
+	img
+		+below(768px)
+			max-width 80px
+		+below(640px)
+			width: 100%
+			max-width 40px
+		max-width 110px
+	&:hover
+		opacity 1
+		filter none
+
+.customers--list
+	margin-left: -20px
+	margin-right: -20px
+	.customers__el
+		+below(1024px)
+			width: calc(100%/3 - 20px)
+		+below(768px)
+			width: calc(100%/2 - 20px)
+		+below(640px)
+			width: calc(100% - 20px)
+		width: calc(20% - 20px)
+		fl()
+		margin: 10px
+		background: white
+		padding: 40px 20px
+		bsh()
+		opacity 1
+		position: relative
+		filter none
+		//align-items: flex-start
+		img
+			filter grayscale(1);
+			max-width 150px
+			opacity .4
+		&:hover
+			img
+				opacity 1
+				filter none
+.section-customer--list
+	padding-top: 0
+.customers__el-text
+	line-height: 1.6
+	font-size: 12px
+	margin-bottom: 20px
+.customers__el-link
+	@extend .btn--sm
+	color $red
+
+.footer-wrap
+	+below(768px)
+		padding: 30px 10px
+		margin-top: 30px
+	padding: 60px 0
+	margin-top: 100px
+	//background: #f1f1f1
+	background: white
+	border-top 1px solid #f8f8f8
+.footer
+	+below(640px)
+		flex(mid)
+		fl()
+	f()
+	fw()
+.footer__col
+	+below(768px)
+		width: 35%
+		&:nth-child(2)
+			display: none
+		&:nth-child(3)
+			display: none
+		&:nth-child(4)
+			margin-left: auto
+	+below(640px)
+		&:nth-child(4)
+			flex(mid)
+			fl()
+		width: 100%
+	width: 25%
+.footer__logo
+	+below(640px)
+		flex(mid)
+		margin-bottom: 20px
+	.icon
+		fill $red
+		max-width 150px
+		height: 45px
+	img
+		fill $red!important
+		max-width 150px
+.footer__title
+	up()
+	font-family:$font
+	font-weight:bold
+	margin-bottom: 20px
+	border-left: 2px solid $red
+	padding-left: 10px;
+//.footer__list
+.footer__list__el
+	display: block
+	margin-bottom: 10px
+.footer-phone
+	font-size: 24px
+	color black
+	font-family:$font
+	margin-bottom: 20px
+	display: block
+.footer-adress
+	margin-bottom: 10px
+.footer-sub
+	background: #f8f8f8
+	padding: 20px
+	flex(mid)
+	fl()
+.footer-sub__text
+	+below(640px)
+		font-size: 10px!important
+	text-align: center
+	max-width 650px
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 10px
+.footer-soc
+	f()
+	margin-left: -10px
+.footer-soc__el
+	margin: 0 5px
+	size 30px
+	border 1px solid $red
+	flex(mid)
+	round()
+	tr(all)
+	&:hover
+		background: $red
+		.icon
+			fill white
+	.icon
+		tr(all)
+		size 15px
+		fill $red
+
+.footer-sub__text
+	font-size: 12px
+
+.section-worker
+	position: relative
+	overflow: hidden
+	.header-sqr
+		right: calc(10% - 15vw);
+		height: 50%;
+		width: 90%
+		top: 30%
+		transform: skewX(0deg);
+.worker
+	f()
+	fw()
+	margin-left: -10px
+	margin-right: -10px
+.worker__el
+	+below(768px)
+		width: 100%
+	+below(640px)
+		fw()
+		padding: 20px
+	f()
+	justify-content: space-between
+	width:calc(100%/2 - 20px)
+	margin: 10px
+	padding: 30px 40px
+	position: relative
+	background: white
+	border-radius: 10px;
+	box-shadow: 0px 3px 10px #e5e5e5
+	tr(all)
+	&:hover
+		box-shadow: 0px 10px 15px darken(#e5e5e5,5)
+
+/*	&:before
+		content ""
+		position: absolute
+		width: 100%
+		height: 100%
+		top 10px
+		left 10px
+		border 1px solid #db0f31*/
+.worker__el__img-wrap
+	+below(640px)
+		width: 100%
+	width: 30%
+	round()
+.worker__el-img
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+		size 200px
+		padding:initial
+		margin-left: auto
+		margin-right: auto
+	bg-full()
+	background-position: top center
+	padding: 50% 5%
+	round()
+.worker__el-content
+	+below(640px)
+		width: 100%
+	width: 65%
+.worker__el-name
+	+below(640px)
+		text-align: center
+	up()
+	font-weight:bold
+	font-family:$font
+	margin-bottom: 5px
+.worker__el-state
+	+below(640px)
+		text-align: center
+	margin-bottom: 10px
+	color $red
+	font-family:$font
+	font-size: 12px
+
+.worker__el-text
+	line-height: 1.6
+	font-size: 12px
+	color #7a7a7a
+
+.header--main
+	background: white
+	.header
+		border-bottom: 1px solid $border-color
+		position: static
+		.header-nav__el-link
+			color #18364a
+		.header-logo
+			color #18364a
+
+.bread-wrap
+	+below(640px)
+		padding: 10px 0
+	padding: 30px 0
+	//background: #042f760a
+.bread-wrap__title
+	font-size: 14px
+	color #84888a
+	line-height: 1.6
+	a
+		color #18364a
+		font-weight:700
+
+.staff
+	+below(640px)
+		fw()
+	f()
+	justify-content: space-between
+.staff__img
+	+below(640px)
+		padding-top: 0
+		img
+			max-width 320px
+		width: 100%
+		flex(mid)
+		margin-bottom: 20px
+	padding-top: 40px
+	width: 40%
+.staff__content
+	+below(640px)
+		width: 100%
+		padding-top: 20px
+	padding-top: 40px
+	width: 55%
+
+.staff__title
+	+below(768px)
+		color #18364a
+	+below(640px)
+		text-align: center
+	@extend .type--xl
+	@extend .title
+	margin-bottom: 10px
+	color white
+	font-family:'Roboto', sans-serif
+
+.staff__state
+	+below(768px)
+		color #18364a
+	+below(640px)
+		text-align: center
+	@extend .title
+	margin-bottom: 30px
+	color white
+.staff__text
+	+below(768px)
+		color #6d6680
+		margin-bottom: 30px
+	line-height: 1.6
+	margin-bottom: 60px
+	color white
+	opacity .95
+	p,ul,li
+		+below(768px)
+			color #6d6680
+		color white
+//.staff-type__wrap
+.staff-type
+	margin-bottom: 30px
+.staff-type__name
+	+below(640px)
+		text-align: center
+	margin-bottom: 10px
+	font-weight:bold
+.staff-type__text
+	+below(640px)
+		text-align: center
+	@extend .type--md
+	color #18364a
+
+.news
+	+below(1024px)
+		max-width 768px
+		margin-left: auto
+		margin-right: auto
+.news-main
+	+below(768px)
+		width: 100%
+	+below(640px)
+		fw()
+	f()
+	justify-content: space-between
+.news-main__info
+	+below(640px)
+		width: 100%
+	width: 58%
+.news-main__date
+	+below(640px)
+		width: 100%
+	width: 35%
+
+.news-main__title
+	+below(640px)
+		width: 100%
+		font-size: 24px
+	@extend .title
+	@extend .type--xl
+	margin-bottom: 30px
+	font-family: Ubuntu
+	width: 90%
+	font-size: 36px
+//.news-main__date
+
+.news-main__content
+	p
+		line-height: 1.6
+
+.news-main__date-val
+	+below(640px)
+		width: 100%
+		padding: 0
+		border 0
+		text-align: left
+		justify-content: flex-start
+		margin-bottom: 20px
+	padding: 20px 40px
+	border 4px solid $red
+	width: 210px
+	flex(mid)
+	@extend .title
+	@extend .type--xl
+	text-align: center
+	background: white
+	font-size: 40px
+	border-radius 10px
+	font-family:pusia
+.advant-el-wrap
+	+below(640px)
+		margin-top: 30px
+	margin-top: 60px
+
+.service-main__el
+	+below(768px)
+		padding: 10px
+	+below(640px)
+		fw()
+		margin-bottom: 10px
+		background: none
+	f()
+	justify-content: space-between
+	align-items: stretch
+	margin-bottom: 60px
+	padding: 40px 30px;
+	//border: 1px solid #ebebeb;
+	border-radius: 10px;
+	position: relative
+	background: white
+	border 1px solid #eeeded
+	//bsh()
+	&:first-child
+		+below(1024px)
+			margin-top: 0
+		margin-top: 30px
+.service-main__info
+	+below(640px)
+		width: 100%
+	width: 45%
+
+.service-main__content
+	+below(640px)
+		width: 100%
+		order 2
+	width: 48%
+
+.service-main__title
+	+below(768px)
+		font-size: 28px
+	+below(640px)
+		font-size: 22px
+		order 1
+	font-size: 46px
+	margin-bottom: 30px
+	font-weight:bold
+
+.service-main__list-el
+	+below(640px)
+		padding: 10px
+	display: block
+	padding: 10px 25px 10px 50px
+	@extend .title
+	position: relative
+	&:before
+		+below(640px)
+			left -10px
+		content ''
+		position: absolute
+		size 10px
+		left 20px
+		top calc(50% - 5px)
+		background: $red
+
+.service-main__content
+	line-height: 1.6
+
+.service-main--gray
+	background: rgba(4,47,118,0.039)
+
+
+
+.main-content
+	+below(768px)
+		padding-bottom: 30px
+	background: #e2e8ec24;
+	padding-bottom: 60px
+	position: relative
+	overflow hidden
+.main-content--skew
+	+below(640px)
+		display: none
+	position: absolute
+	width: 40%
+	height: 100%
+	top 0
+	left 20%
+	background: $red
+	transform skew(30deg)
+
+.main-content__figure
+	+below(1280px)
+		left: -10%
+		width: 120vw
+	+below(768px)
+		display: none
+	width: 90vw
+	height: 100%
+	background: $red
+	border-radius 20px
+	position: absolute
+	transform skew(135deg)
+	top 0%
+	left: 10%
+
+.news-main__figure
+	+below(768px)
+		display: none
+	width: 80%
+	height: 100%
+	background: $red
+	border-radius 20px
+	position: absolute
+	transform skew(-15deg)
+	top 0%
+	left: -50%
+
+//fix header animate
+@-webkit-keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.shrink
+	top 0
+	left 0
+	background white
+	width 100%
+	margin 0
+	animation:  slideInDown  1s 1 ease-in-out;
+	border-bottom 1px solid #ededed!important
+	position: fixed!important
+	.header-nav__el-link
+		color black!important
+	.header-nav__el-icon
+		.icon-el
+			fill black!important
+	.menu-toggle
+		.icon-el
+			fill black!important
+	.header-logo
+		.icon
+			fill $red!important
+.header--main.shrink
+	padding: 0
+	position: fixed
+//fix header animate
+
+
+.service-full
+	f()
+	justify-content: space-between
+.service-full__info
+	+below(1024px)
+		width: 100%
+	width: 58%
+.service-full__chart
+	+below(1024px)
+		display: none
+	width: 35%
+	canvas
+		max-width 450px!important
+
+.service-full__title
+	+below(1024px)
+		width: 100%
+	@extend .title
+	@extend .type--xl
+	margin-bottom: 30px
+	font-family: Ubuntu
+	width: 90%
+
+//.service-full__date
+
+.service-full__content
+	p
+		line-height: 1.6
+
+.service-full__advance
+	padding: 20px 30px
+	background: #efefef
+	border-radius 10px
+	p
+		margin-top: 0
+
+.contact-form__title
+	@extend .title
+	@extend .type--lg
+	margin-bottom: 30px
+
+.contact-form__cont
+	input[type="submit"]
+		+below(480px)
+			width: 100%
+			border: 1px solid #11115e26;
+		@extend .btn--md
+		@extend .btn--mark
+
+.agree-row
+	f()
+	align-items: center
+	margin: 30px 0
+
+.form-wrap
+	+below(640px)
+		fw()
+	f()
+	justify-content: space-between
+
+.form-inputs
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+	width: 48%
+	.input-row
+		input
+			margin-bottom: 20px
+		&:last-child
+			input
+				margin-bottom: 0
+
+.form-text
+	+below(640px)
+		width: 100%
+	width: 48%
+	.input-row
+		height: 100%
+	textarea
+		height: 100%
+
+/*.contact-form__wrap
+	padding: 60px 30px
+	bsh()
+	background: white*/
+.section-contact
+	+below(768px)
+		margin-bottom: -30px
+	background: #f4f4f4
+	position: relative
+	overflow hidden
+	.bg-text
+		color white
+		bottom 0
+		up()
+		line-height: 1
+		color #18364a0a
+	margin-bottom: -100px
+.section-contact--skew
+	position: absolute
+	width: 90%
+	height: 100%
+	top: 0
+	right: -50%
+	background: #db0f31
+	transform: skew(-15deg)
+
+.customer-about
+	+below(640px)
+		fw()
+	f()
+	justify-content: space-between
+.customer-about__img
+	+below(640px)
+		width: 100%
+		order 1
+		margin-bottom: 20px
+	width: 35%
+	flex(mid)
+.customer-about__info
+	+below(640px)
+		width: 100%
+		order 2
+	width: 60%
+.customer-about__title
+	@extend .title
+	@extend .type--xl
+.customer-project__title
+	@extend .title
+	@extend .type--lg
+//.customer-about__text
+
+.customer-project__tag
+	+below(640px)
+		padding: 20px 0
+		margin: 0
+	border-top 1px solid $border-color
+	padding-top: 30px
+	margin: 30px 0 60px 0
+.customer-project__tag-el
+	display: inline-block
+	padding: 5px 10px
+	background: $red
+	color white
+	font-size: 12px
+	margin-right: 5px
+	margin-bottom: 10px
+	border-radius 10px
+
+.customer-project__tag-title
+	@extend .type--md
+	@extend .title
+	display: inline-block
+	margin-right: 20px
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+.press
+	+below(768px)
+		fw()
+	f()
+	margin-top: 30px
+	padding-top: 30px
+	border-top 1px solid $border-color
+.press__row
+	+below(768px)
+		width: 100%
+		margin-bottom: 10px
+	+below(640px)
+		fw()
+	f()
+	margin-bottom: 20px
+	margin-right: 20px
+.press__title
+	+below(640px)
+		width: 100%
+		margin-bottom: 10px
+	font-weight:bold
+	margin-right: 20px
+	font-family: $font
+
+//.press__val
+
+//.contact
+.contact__phone
+	+below(768px)
+		font-size: 10vw
+	@extend .title
+	font-size: 100px
+	margin-bottom: 30px
+.contact__adres
+	font-weight:bold
+	margin-bottom: 20px
+
+.mission
+	+below(768px)
+		fw()
+		padding: 20px 0
+	f()
+	padding-bottom: 240px
+.mission__el
+	+below(768px)
+		padding: 20px
+		width: 100%
+	padding: 140px 20px
+	width: 33%
+	border 1px solid $border-color
+	&:nth-child(2)
+		+below(768px)
+			transform translateY(0)
+		transform translateY(120px)
+		.mission__title
+			color white
+	&:nth-child(3)
+		+below(768px)
+			transform translateY(0)
+		transform translateY(240px)
+.mission__title
+	@extend .title
+	@extend .type--lg
+	margin-bottom: 20px
+.mission__text
+	line-height: 1.6
+
+.mission__el--mark
+	background: $red
+	color white
+
+.sert__title
+	@extend .type--lg
+	@extend .title
+	margin-bottom: 60px
+.sert-wrap
+	+below(640px)
+		display: grid
+		grid-gap 10
+		grid-template-columns repeat(2,1fr);
+	f()
+	fw()
+.sert__el
+	+below(640px)
+		width: 100%
+		fl()
+	width: calc(100%/3 - 20px)
+	margin-bottom: 20px
+	f()
+.sert__el-icon
+	.icon
+		size 50px
+		margin-right: 30px
+
+.sert
+	+below(640px)
+		margin-bottom: 30px
+	margin-bottom: 60px
+
+.sert__el-text
+	+below(640px)
+		font-size: 10px
+		line-height: 1.6
+
+.advant-el__text
+	line-height: 1.6
+
+.section-title-row--news
+	.section-title
+		+below(768px)
+			margin: 20px 0
+		margin: 40px 0
+
+.main-content--smi
+	.news-main__date
+		display: none
+	.news-main__info
+		width: 100%
+	.news-main__title
+		width: 100%
+	.news-main__figure
+		display: none
+
+//style
+.modal-content--truesend
+	background: none!important
+	flex(mid)
+	fl()
+	.icon
+		size 100px
+		margin-bottom: 30px
+		fill $green
+.modal-text-truesend
+	text-align: center
+	font-weight: bold
+	font-size: 20px
+	color white
+	text-transform: uppercase
+
+.field-error
+	.input
+		border 1px solid $red
+		margin-bottom: 0px
+	.error
+		margin-top: -20px
+		margin-bottom: 20px
+		display: inline-block
+		color $red
+
+.agree-row
+	.error
+		display: none
+	.field-error
+		.sytle-input-element
+			border 1px solid $red
+
+//modal
+.modal-layer
+	width: 100%
+	height: 100vh
+	position: fixed
+	z-index 1000
+	top 0
+	left 0
+	visibility: hidden
+	transition all 1s // duration for fade
+	opacity 0
+
+.modal-layer-show
+	visibility: visible
+	opacity 1
+
+.modal-cont
+	width: 100%
+	height: 100%
+	position: relative
+	max-height 100%
+	overflow: auto
+
+.modal-filter
+	+below(640px)
+		//background: white
+	position: absolute
+	top: 0
+	left: 0
+	background: rgba(0, 0, 0, 0.6)
+	width: 100%
+	height: 100vh
+	min-height 100vh
+
+.modal
+	+below(768px)
+		width: 100%
+		box-shadow 0 0 0
+	//box-shadow 0 2px 4px rgba(0, 0, 0, 0.24)
+	transform translate(-50%,-350%)
+	position: absolute
+	top 50%
+	left 50%
+	opacity .1
+	transition transform .8s, opacity 1s
+	max-width 550px
+
+.modal-content
+	+below(768px)
+		padding: 20px
+	+below(640px)
+		max-height calc(100vh - 60px)
+		overflow-y scroll
+		padding: 20px 5px
+		width: 100%!important
+	//background: #2b8850
+	background: white
+	position: relative
+	padding: 40px
+	+below(768px)
+		width: 80%
+
+.modal-content--register
+	width: 500px
+	input
+		width: 100%
+		margin-bottom: 20px
+
+.modal__show
+	+below(768px)
+		flex(mid)
+	opacity 1
+	transform translate(-50%,-50%)
+
+.modal-close
+	+below(768px)
+		top 15px
+		right 15px
+	position: absolute
+	top: 20px
+	right: 20px
+	cp()
+	.icon
+		+below(768px)
+			size 15px
+		size 20px
+
+.modal-open
+	overflow: hidden
+	overflow-x: hidden
+	overflow-y: scroll
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+
+.modal-wrap
+	position: relative
+	height: 100%
+
+.modal-title
+	+below(768px)
+		font-size: 20px
+	@extend .type--lg
+	margin-bottom: 0px
+	text-align: center
+	//color white
+	color black
+	font-size: 32px
+
+.modal-text
+	+below(768px)
+		width: 100%
+		font-size: 12px
+	text-align: center
+	margin: 20px auto 40px auto
+	//width: 80%
+	font-size: 16px
+	line-height: 1.2
+	color #5f5f5f
+
+.validate-form
+	input,textarea
+		width: 100%
+		margin-bottom: 20px
+
+.modal-send
+	@extend .btn--md
+	@extend .btn--mark
+	border 0
+	width: 100%
+	font-weight: 600
+	padding: 15px
+	font-size: 16px
+
+.agree-row
+	f()
+	align-items: center
+	margin:10px 0 20px 0
+	a
+		text-decoration: underline
+		display: inline-block
+
+.agree-row__text
+	width: 100%
+	color black
+	font-size: 12px
+	a
+		color #9c9a9a
+		text-decoration: none
+.field-error
+	.error
+		display: none!important
+
+.field-error
+	input
+		border 1px solid #dc3d3d
+.style-label--checkbox.field-error
+	.sytle-input-element
+		border 1px solid #dc3d3d
+
+.modal-content--true
+	flex(mid)
+	fl()
+	br(10px)
+	.icon
+		fill green
+		size 120px
+		margin-bottom: 20px
+.modal-text-true
+	text-align: center
+	font-weight: bold
+//modal===end
+
+.input-row--sand
+	display: inline-block
+	+below(480px)
+		display: block

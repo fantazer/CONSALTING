@@ -12,29 +12,6 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
 		<!--icons
 	link(rel="shortcut icon" href="img/fav/favicon.ico")
-	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
-	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
-	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
-	link(rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png")
-	link(rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png")
-	link(rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png")
-	link(rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png")
-	link(rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png")
-	link(rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png")
-	meta(name="apple-mobile-web-app-capable" content="yes")
-	meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
-	meta(name="apple-mobile-web-app-title" content="My App")
-	link(rel="yandex-tableau-widget" href="img/fav/yandex-browser-manifest.json")
-	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
-	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
-	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
-	link(rel="manifest" href="img/fav/manifest.json")
-	meta(name="mobile-web-app-capable" content="yes")
-	meta(name="theme-color" content="#020307")
-	meta(name="application-name" content="My App")
-	meta(name="msapplication-TileColor" content="#020307")
-	meta(name="msapplication-TileImage" content="img/fav/mstile-144x144.png")
-	meta(name="msapplication-config" content="img/fav/browserconfig.xml")
 	
 	-->
 		<!--SEO-->
@@ -42,96 +19,103 @@
 		<meta name="description" itemprop="description" content="" />
 		<!--build:css css/vendor.css-->
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
-		<!--link(rel="stylesheet", href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css")-->
-		<!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
-		<!--link(rel="stylesheet", href="bower/owl.carousel/dist/assets/owl.carousel.css")-->
-		<!--endbuild-->
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-edit.css" />
 		<link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
 		<link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
+		<!--endbuild-->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
 	</head>
 	<!-- mixin nameMixin()-->
 	<!-- - var args = Array.prototype.slice.call(arguments)-->
 	<!-- - for item in args-->
 
 	<body>
-		<!--block header-->
 		<div class="main-section" style="background-image:url('/img/item-10.jpg')">
 			<div class="main-section-filter"></div>
 			<div class="header-sqr"></div>
-			<div class="header">
-				<div class="header-layer">
-					<div class="main-cont">
-						<div class="header-wrap">
-							<a class="header-logo" href="#">Logo
-								<!--img(src="img/logo-main.svg", alt="")-->
-							</a>
-							<div class="header-nav">
-								<div class="header-nav__el">
-									<a class="header-nav__el-link header-nav__el-link--mark" href="#">Главная</a>
-								</div>
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">Услуги</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</div>
+			<div class="header-main-page">
+				<!--block header-->
+				<div class="header">
+					<div class="header-layer">
+						<div class="main-cont">
+							<div class="header-wrap">
+								<a class="header-logo" href="#">
+									<!--img(src="img/logo.png", alt="")-->
+									<svg class="icon">
+										<use xlink:href="#logo-white"></use>
+									</svg>
+								</a>
+								<div class="header-nav">
+									<div class="header-nav__el">
+										<a class="header-nav__el-link header-nav__el-link--mark" href="#">Главная</a>
 									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">Консалтинг</a>
-												<a class="header-nav__sub-el" href="#">Аудит ИТ</a>
-												<a class="header-nav__sub-el" href="#">Автоматизация</a>
-												<a class="header-nav__sub-el" href="#">Учебный центр</a>
+									<div class="header-nav__el">
+										<div class="header-nav__el-link-wrap">
+											<a class="header-nav__el-link" href="#">Услуги</a>
+											<div class="header-nav__el-icon">
+												<svg class="icon-el">
+													<use xlink:href="#arrow-down"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="header-nav__sub">
+											<div class="coner-wrap">
+												<div class="window-coner-top"></div>
+												<div class="header-nav__sub-wrap">
+													<a class="header-nav__sub-el" href="#">Консалтинг</a>
+													<a class="header-nav__sub-el" href="#">Аудит ИТ</a>
+													<a class="header-nav__sub-el" href="#">Автоматизация</a>
+													<a class="header-nav__sub-el" href="#">Учебный центр</a>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">О компании</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
+									<div class="header-nav__el">
+										<div class="header-nav__el-link-wrap">
+											<a class="header-nav__el-link" href="#">О компании</a>
+											<div class="header-nav__el-icon">
+												<svg class="icon-el">
+													<use xlink:href="#arrow-down"></use>
+												</svg>
+											</div>
 										</div>
-									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">Новости</a>
-												<a class="header-nav__sub-el" href="#">Комманда</a>
-												<a class="header-nav__sub-el" href="#">Хронология</a>
-												<a class="header-nav__sub-el" href="#">Мы в СМИ</a>
+										<div class="header-nav__sub">
+											<div class="coner-wrap">
+												<div class="window-coner-top"></div>
+												<div class="header-nav__sub-wrap">
+													<a class="header-nav__sub-el" href="#">Новости</a>
+													<a class="header-nav__sub-el" href="#">Комманда</a>
+													<a class="header-nav__sub-el" href="#">Хронология</a>
+													<a class="header-nav__sub-el" href="#">Мы в СМИ</a>
+												</div>
 											</div>
 										</div>
 									</div>
+									<div class="header-nav__el">
+										<a class="header-nav__el-link" href="#">Заказчики</a>
+									</div>
+									<div class="header-nav__el">
+										<a class="header-nav__el-link" href="#">Контакты</a>
+									</div>
 								</div>
-								<div class="header-nav__el">
-									<a class="header-nav__el-link" href="#">Заказчики</a>
+								<!--.header-contact
+						.header-phone
+							a(href="tel:8(495)123-12-12") 8(495)123-12-12
+						-->
+								<div class="menu-toggle">
+									<svg class="icon-el icon-el--open">
+										<use xlink:href="#menu"></use>
+									</svg>
+									<svg class="icon-el icon-el--close">
+										<use xlink:href="#close"></use>
+									</svg>
 								</div>
-								<div class="header-nav__el">
-									<a class="header-nav__el-link" href="#">Контакты</a>
-								</div>
-							</div>
-							<!--.header-contact
-					.header-phone
-						a(href="tel:8(495)123-12-12") 8(495)123-12-12
-					-->
-							<div class="menu-toggle">
-								<svg class="icon-el">
-									<use xlink:href="#menu"></use>
-								</svg>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!--block header end-->
 			</div>
 			<div class="main-section-cont">
 				<div class="main-section-title">КОНСАЛТИНГ
@@ -142,7 +126,6 @@
 				</div>
 			</div>
 		</div>
-		<!--block header end-->
 		<div class="section section--service">
 			<div class="main-cont">
 				<!--.section-title Наши услуги-->
@@ -150,7 +133,7 @@
 					<div class="service__el">
 						<div class="service__el-icon">
 							<svg class="icon">
-								<use xlink:href="#business-presentation"></use>
+								<use xlink:href="#group"></use>
 							</svg>
 						</div>
 						<div class="service__title">Консалтинг</div>
@@ -166,7 +149,7 @@
 					<div class="service__el">
 						<div class="service__el-icon">
 							<svg class="icon">
-								<use xlink:href="#analytics"></use>
+								<use xlink:href="#user"></use>
 							</svg>
 						</div>
 						<div class="service__title">Аудит ИТ</div>
@@ -182,7 +165,7 @@
 					<div class="service__el">
 						<div class="service__el-icon">
 							<svg class="icon">
-								<use xlink:href="#line-graph"></use>
+								<use xlink:href="#settings"></use>
 							</svg>
 						</div>
 						<div class="service__title">Автоматизация</div>
@@ -198,7 +181,7 @@
 					<div class="service__el">
 						<div class="service__el-icon">
 							<svg class="icon">
-								<use xlink:href="#briefcase"></use>
+								<use xlink:href="#desk"></use>
 							</svg>
 						</div>
 						<div class="service__title">Учебный центр</div>
@@ -284,6 +267,190 @@
 				</div>
 			</div>
 		</div>
+		<div class="section section-advant">
+			<div class="advant">
+				<div class="advant-numb">
+					<div class="advant-numb__wrap">
+						<div class="advant-numb__val">15</div>
+						<div class="advant-numb__text">лет</div>
+					</div>
+				</div>
+				<div class="advant-cont">
+					<div class="advant-cont__wrap">
+						<div class="advant-title">Компания IT Expert Consulting</div>
+						<div class="advant-text">
+							<p>Компания IT Expert создана в 2002 г. группой экспертов, стоявших у истоков развития систем корпоративного управления и ИТ-менеджмента в России. Основной концепцией деятельности компании стало распространение передового международного опыта в сфере
+								ИТ-управления и применение лучших знаний и практик для эффективного решения задач развития ИТ и бизнеса на российских предприятиях.</p>
+							<p>Целью нашей компании является развитие экспертных подходов и методов в области ИТ управления и предоставление нашим клиентам не только теоретических знаний, но и практической помощи по их внедрению на основе передовых мировых стандартов, российской
+								практики и собственного опыта, накопленного нашими специалистами при выполнении масштабных проектов для компаний-заказчиков различных отраслей и форм собственности, с учетом индивидуальных требований руководства и специфики деятельности.</p>
+							<div class="advant-el-wrap">
+								<div class="advant-el">
+									<div class="advant-el__val">13 ITIL Experts</div>
+									<div class="advant-el__text">В нашей команде работает 13 ITIL Experts.</div>
+								</div>
+								<div class="advant-el">
+									<div class="advant-el__val">ISO 20000</div>
+									<div class="advant-el__text">Мы подготовили российскую версию стандарта ISO 20000 2015 года</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-worker">
+			<div class="header-sqr"></div>
+			<div class="bg-text">MANS</div>
+			<div class="filter filter--white"></div>
+			<div class="main-cont">
+				<div class="section-title-row">
+					<div class="section-title-head">
+						<img src="img/title-head.png" alt="" />
+					</div>
+					<div class="section-title">Наши сотрудники</div>
+					<div class="worker">
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+						<a class="worker__el" href="#">
+							<div class="worker__el__img-wrap">
+								<div class="worker__el-img" style="background-image:url('img/worker.jpg')"></div>
+							</div>
+							<div class="worker__el-content">
+								<div class="worker__el-name">Павел Кудрявцев</div>
+								<div class="worker__el-state">Управляющий партнер</div>
+								<div class="worker__el-text">Обладает 20-летним опытом в области информационных технологий, из них более 10 лет практики в сфере ИТ-менеджмента и аудита информационных технологий. Окончил МЭСИ, факультет экономической кибернетики.</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-customer">
+			<div class="bg-text">customers</div>
+			<div class="main-cont">
+				<div class="section-title-row">
+					<div class="section-title-head">
+						<img src="img/title-head.png" alt="" />
+					</div>
+					<div class="section-title">Наши клиенты</div>
+				</div>
+				<div class="customers">
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+					<div class="customers__el">
+						<img src="img/customers.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="section section--news section--gray">
 			<div class="header-sqr"></div>
 			<div class="bg-text">NEWS</div>
@@ -347,14 +514,87 @@
 				</div>
 			</div>
 		</div>
+		<!--block footer-->
+		<div class="footer-wrap">
+			<div class="main-cont">
+				<div class="footer">
+					<div class="footer__col">
+						<div class="footer__logo">
+							<svg class="icon">
+								<use xlink:href="#logo-white"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Услуги</div>
+						<div class="footer__list">
+							<a class="footer__list__el" href="#">Консалтинг</a>
+							<a class="footer__list__el" href="#">Аудит ит</a>
+							<a class="footer__list__el" href="#">Автоматизация</a>
+							<a class="footer__list__el" href="#">Учебный Центр</a>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">О компании</div>
+						<div class="footer__list">
+							<a class="footer__list__el" href="#">Новости</a>
+							<a class="footer__list__el" href="#">Комманда</a>
+							<a class="footer__list__el" href="#">Хронология</a>
+							<a class="footer__list__el" href="#">Мы в СМИ</a>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer-phone">8(495)981-57-10</div>
+						<div class="footer-adress">ул.Каланчевская 15 оф 402</div>
+						<div class="footer-adress">Троицкий проспект 95 корп 1 оф 705</div>
+						<div class="footer-soc">
+							<a class="footer-soc__el" href="#">
+								<svg class="icon">
+									<use xlink:href="#soc-facebook"></use>
+								</svg>
+							</a>
+							<a class="footer-soc__el" href="#">
+								<svg class="icon">
+									<use xlink:href="#soc-twitter"></use>
+								</svg>
+							</a>
+							<a class="footer-soc__el" href="#">
+								<svg class="icon">
+									<use xlink:href="#soc-vk"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-sub">
+			<div class="footer-sub__text">© ITEXPERT.RU, 2014-2017 г. | Все права защищены ITIL® и PRINCE2® — зарегистрированные торговые марки компании AXELOS Limited.</div>
+		</div>
+		<!--modal template-->
+		<div class="modal-layer">
+			<div class="modal-cont">
+				<div class="modal-filter"></div>
+				<div class="modal-wrap">
+					<div class="modal" data-modal="trueMsg">
+						<div class="modal-content modal-content--truesend">
+							<img src="img/mail-true.svg" alt="" />
+							<div class="modal-text-truesend">Ваша заявка принята!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block footer end-->
 		<!--build:js js/combined.js-->
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
 		<!--script(src='bower/owl.carousel/dist/owl.carousel.min.js')-->
 		<!--script(src="js/jquery.smoothscroll.js")-->
-		<!-- endbuild-->
 		<script src="js/chart.min.js"></script>
 		<script src="bower/slick-carousel/slick/slick.js"></script>
+		<script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
+		<!-- endbuild-->
 		<script src="js/script.js"></script>
 		<script src="js/script-edit.js"></script>
 	</body>
