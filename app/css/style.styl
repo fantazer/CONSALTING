@@ -43,7 +43,8 @@ ul,ol
 	text-align: center
 	margin-bottom: 80px
 	position: relative
-	color #18364a
+	//color #18364a
+	color black
 	&:before
 		content ""
 		position: absolute
@@ -82,6 +83,7 @@ ul,ol
 	up()
 	font-family: $font
 	margin-bottom: 40px
+	color black
 .service__list-el
 	display: block
 	margin-bottom: 15px
@@ -118,7 +120,7 @@ ul,ol
 .about__title
 	@extend .title
 	@extend .type--lg
-
+	color black
 	font-family: $font
 	margin-bottom: 20px
 	padding-bottom: 20px
@@ -296,8 +298,8 @@ ul,ol
 	font-family: $font
 	margin-bottom: 30px
 	position: relative
-	color #18364a
-
+	//color #18364a
+	color black
 .advant-cont__wrap
 	+below(640px)
 		width: 100%
@@ -323,7 +325,7 @@ ul,ol
 	top 25%
 	opacity .4
 .advant-numb__wrap
-	color #8d0017
+	color darken($red,30)
 
 .advant-el
 	+below(640px)
@@ -466,7 +468,8 @@ ul,ol
 	font-weight:bold
 	margin-bottom: 20px
 	border-left: 2px solid $red
-	padding-left: 10px;
+	padding-left: 10px
+	color black
 //.footer__list
 .footer__list__el
 	display: block
@@ -583,6 +586,7 @@ ul,ol
 	font-weight:bold
 	font-family:$font
 	margin-bottom: 5px
+	color black
 .worker__el-state
 	+below(640px)
 		text-align: center
@@ -602,9 +606,9 @@ ul,ol
 		border-bottom: 1px solid $border-color
 		position: static
 		.header-nav__el-link
-			color #18364a
+			color black
 		.header-logo
-			color #18364a
+			color black
 
 .bread-wrap
 	+below(640px)
@@ -684,7 +688,7 @@ ul,ol
 	+below(640px)
 		text-align: center
 	@extend .type--md
-	color #18364a
+	color black
 
 .news
 	+below(1024px)
@@ -717,6 +721,7 @@ ul,ol
 	font-family: Ubuntu
 	width: 90%
 	font-size: 36px
+	color black
 //.news-main__date
 
 .news-main__content
@@ -789,6 +794,7 @@ ul,ol
 	font-size: 46px
 	margin-bottom: 30px
 	font-weight:bold
+	color black
 
 .service-main__list-el
 	+below(640px)
@@ -920,6 +926,7 @@ ul,ol
 	margin-bottom: 30px
 	font-family: Ubuntu
 	width: 90%
+	color black
 
 //.service-full__date
 
@@ -938,7 +945,7 @@ ul,ol
 	@extend .title
 	@extend .type--lg
 	margin-bottom: 30px
-
+	color black
 .contact-form__cont
 	input[type="submit"]
 		+below(480px)
@@ -1002,7 +1009,7 @@ ul,ol
 	height: 100%
 	top: 0
 	right: -50%
-	background: #db0f31
+	background: $red
 	transform: skew(-15deg)
 
 .customer-about
@@ -1025,9 +1032,11 @@ ul,ol
 .customer-about__title
 	@extend .title
 	@extend .type--xl
+	color black
 .customer-project__title
 	@extend .title
 	@extend .type--lg
+	color black
 //.customer-about__text
 
 .customer-project__tag
@@ -1088,6 +1097,7 @@ ul,ol
 	@extend .title
 	font-size: 100px
 	margin-bottom: 30px
+	color black
 .contact__adres
 	font-weight:bold
 	margin-bottom: 20px

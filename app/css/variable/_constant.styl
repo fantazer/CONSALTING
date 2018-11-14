@@ -17,9 +17,9 @@ silver = #DDDDDD
 gray = #AAAAAA
 black = #111111
 
-$red = #3a90c8
-$red = #db0f31
-$title-color = #38304c
+$red = black
+//$red = #db0f31
+$title-color = black
 
 $main-text-color = #18364A
 $link-color = black
@@ -74,14 +74,19 @@ typeSize(fontSm,font)
 
 h1
 	@extend .type--xl
+	color black
 h2
 	@extend .type--lg
+	color black
 h3
 	@extend .type--lg
+	color black
 h4
 	@extend .type--sm
+	color black
 h5
 	@extend .type--xs
+	color black
 
 a
 	color $link-color
@@ -181,6 +186,7 @@ btnStyleLight(br-btn,color-btn)
 	&:hover
 		background-color darken($red,10)
 		border 2px solid $red
+		color white!important
 		.nav-icon
 			fill $red
 	&:active

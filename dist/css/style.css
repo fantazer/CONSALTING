@@ -397,7 +397,7 @@ body {
 .staff-type__text,
 .customer-project__tag-title {
   font-size: 22px;
-  color: #38304c;
+  color: #111;
   font-family: Pusia;
   font-weight: 700;
 }
@@ -418,7 +418,7 @@ h3,
 .sert__title,
 .modal-title {
   font-size: 30px;
-  color: #38304c;
+  color: #111;
   font-family: Pusia;
   font-weight: 700;
 }
@@ -461,6 +461,21 @@ h1,
 .type--bold {
   font-weight: bold;
 }
+h1 {
+  color: #111;
+}
+h2 {
+  color: #111;
+}
+h3 {
+  color: #111;
+}
+h4 {
+  color: #111;
+}
+h5 {
+  color: #111;
+}
 a {
   color: #111;
 }
@@ -474,13 +489,13 @@ p {
   line-height: 1.6;
 }
 .link--mark {
-  color: #db0f31;
+  color: #3a90c8;
 }
 .link--mark:hover {
-  color: #7c081c;
+  color: #22577a;
 }
 .link--mark:visiter {
-  color: #4c0511;
+  color: #173b52;
 }
 .link--main {
   color: #111;
@@ -586,8 +601,8 @@ p {
 .contact-form__cont input[type="submit"],
 .modal-send {
   color: #fff;
-  background: #db0f31;
-  border: 2px solid #db0f31;
+  background: #3a90c8;
+  border: 2px solid #3a90c8;
 }
 .btn--mark .nav-icon,
 .about-get .nav-icon,
@@ -599,28 +614,29 @@ p {
 .about-get:hover,
 .contact-form__cont input[type="submit"]:hover,
 .modal-send:hover {
-  background-color: #ab0c26;
-  border: 2px solid #db0f31;
+  background-color: #2d74a2;
+  border: 2px solid #3a90c8;
+  color: #fff !important;
 }
 .btn--mark:hover .nav-icon,
 .about-get:hover .nav-icon,
 .contact-form__cont input[type="submit"]:hover .nav-icon,
 .modal-send:hover .nav-icon {
-  fill: #db0f31;
+  fill: #3a90c8;
 }
 .btn--mark:active,
 .about-get:active,
 .contact-form__cont input[type="submit"]:active,
 .modal-send:active {
-  color: #db0f31;
+  color: #3a90c8;
   background-color: #fff;
-  border: 2px solid #db0f31;
+  border: 2px solid #3a90c8;
 }
 .btn--mark:active .nav-icon,
 .about-get:active .nav-icon,
 .contact-form__cont input[type="submit"]:active .nav-icon,
 .modal-send:active .nav-icon {
-  fill: #db0f31;
+  fill: #3a90c8;
 }
 .btn--mark input[type="submit"],
 .about-get input[type="submit"],
@@ -640,19 +656,19 @@ p {
   color: #000;
 }
 .btn--light {
-  border: 2px solid #db0f31;
+  border: 2px solid #3a90c8;
   background-color: #fff;
-  color: #db0f31;
+  color: #3a90c8;
 }
 .btn--light:hover {
   color: #fff;
-  background-color: #db0f31;
+  background-color: #3a90c8;
 }
 .btn--light:hover .icon {
   fill: #fff;
 }
 .btn--light .nav-icon {
-  fill: #db0f31;
+  fill: #3a90c8;
 }
 .btn--grey {
   border: 1px solid #ddd;
@@ -789,7 +805,7 @@ button {
 .input:focus,
 .textarea:focus,
 .select:focus {
-  border: 1px solid #db0f31;
+  border: 1px solid #3a90c8;
 }
 .style-label {
   display: -webkit-box;
@@ -911,7 +927,7 @@ button {
   text-align: left;
 }
 .header-logo .icon {
-  fill: #db0f31;
+  fill: #3a90c8;
   width: 120px;
   height: 120px;
 }
@@ -1289,7 +1305,7 @@ button {
   border-bottom: 0;
 }
 .header-nav__el-link--mark {
-  border-bottom: 2px solid #db0f31;
+  border-bottom: 2px solid #3a90c8;
 }
 @media only screen and (max-width: 1024px) {
   .header-nav__el-link--mark {
@@ -1366,7 +1382,7 @@ ol li {
   text-align: center;
   margin-bottom: 80px;
   position: relative;
-  color: #18364a;
+  color: #111;
 }
 @media only screen and (max-width: 768px) {
   .section-title {
@@ -1445,6 +1461,7 @@ ol li {
   text-transform: uppercase;
   font-family: Pusia;
   margin-bottom: 40px;
+  color: #111;
 }
 @media only screen and (max-width: 640px) {
   .service__title {
@@ -1464,7 +1481,7 @@ ol li {
   content: "";
   width: 5px;
   height: 5px;
-  background: #db0f31;
+  background: #3a90c8;
   position: absolute;
   left: 0;
   top: 5px;
@@ -1503,6 +1520,7 @@ ol li {
   padding-top: 0;
 }
 .about__title {
+  color: #111;
   font-family: Pusia;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1626,7 +1644,7 @@ ol li {
   cursor: pointer;
 }
 .slider-control:hover {
-  background: #db0f31;
+  background: #3a90c8;
 }
 .slider-control:hover .icon {
   fill: #fff;
@@ -1652,7 +1670,7 @@ ol li {
 .header-sqr {
   width: 20vw;
   height: 80%;
-  border: 20px solid #db0f31;
+  border: 20px solid #3a90c8;
   position: absolute;
   top: 10%;
   left: -webkit-calc(50% -20vw);
@@ -1832,7 +1850,7 @@ ol li {
   font-family: Pusia;
   margin-bottom: 30px;
   position: relative;
-  color: #18364a;
+  color: #111;
 }
 @media only screen and (max-width: 768px) {
   .advant-title {
@@ -1848,7 +1866,7 @@ ol li {
   }
 }
 .advant-numb {
-  background: #db0f31;
+  background: #3a90c8;
   position: relative;
 }
 .advant-numb__val {
@@ -1871,12 +1889,12 @@ ol li {
   opacity: 0.4;
 }
 .advant-numb__wrap {
-  color: #8d0017;
+  color: #173b52;
 }
 .advant-el {
   margin-bottom: 30px;
   padding-left: 20px;
-  border-left: 5px solid #db0f31;
+  border-left: 5px solid #3a90c8;
 }
 @media only screen and (max-width: 640px) {
   .advant-el:last-child {
@@ -2032,7 +2050,7 @@ ol li {
   margin-bottom: 20px;
 }
 .customers__el-link {
-  color: #db0f31;
+  color: #3a90c8;
 }
 .footer-wrap {
   padding: 60px 0;
@@ -2131,12 +2149,12 @@ ol li {
   }
 }
 .footer__logo .icon {
-  fill: #db0f31;
+  fill: #3a90c8;
   max-width: 150px;
   height: 45px;
 }
 .footer__logo img {
-  fill: #db0f31 !important;
+  fill: #3a90c8 !important;
   max-width: 150px;
 }
 .footer__title {
@@ -2144,8 +2162,9 @@ ol li {
   font-family: Pusia;
   font-weight: bold;
   margin-bottom: 20px;
-  border-left: 2px solid #db0f31;
+  border-left: 2px solid #3a90c8;
   padding-left: 10px;
+  color: #111;
 }
 .footer__list__el {
   display: block;
@@ -2203,7 +2222,7 @@ ol li {
   margin: 0 5px;
   width: 30px;
   height: 30px;
-  border: 1px solid #db0f31;
+  border: 1px solid #3a90c8;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2222,7 +2241,7 @@ ol li {
           transition: all 0.4s;
 }
 .footer-soc__el:hover {
-  background: #db0f31;
+  background: #3a90c8;
 }
 .footer-soc__el:hover .icon {
   fill: #fff;
@@ -2232,7 +2251,7 @@ ol li {
           transition: all 0.4s;
   width: 15px;
   height: 15px;
-  fill: #db0f31;
+  fill: #3a90c8;
 }
 .footer-sub__text {
   font-size: 12px;
@@ -2352,6 +2371,7 @@ ol li {
   font-weight: bold;
   font-family: Pusia;
   margin-bottom: 5px;
+  color: #111;
 }
 @media only screen and (max-width: 640px) {
   .worker__el-name {
@@ -2360,7 +2380,7 @@ ol li {
 }
 .worker__el-state {
   margin-bottom: 10px;
-  color: #db0f31;
+  color: #3a90c8;
   font-family: Pusia;
   font-size: 12px;
 }
@@ -2382,10 +2402,10 @@ ol li {
   position: static;
 }
 .header--main .header .header-nav__el-link {
-  color: #18364a;
+  color: #111;
 }
 .header--main .header .header-logo {
-  color: #18364a;
+  color: #111;
 }
 .bread-wrap {
   padding: 30px 0;
@@ -2523,7 +2543,7 @@ ol li {
   }
 }
 .staff-type__text {
-  color: #18364a;
+  color: #111;
 }
 @media only screen and (max-width: 640px) {
   .staff-type__text {
@@ -2580,6 +2600,7 @@ ol li {
   font-family: Ubuntu;
   width: 90%;
   font-size: 36px;
+  color: #111;
 }
 @media only screen and (max-width: 640px) {
   .news-main__title {
@@ -2592,7 +2613,7 @@ ol li {
 }
 .news-main__date-val {
   padding: 20px 40px;
-  border: 4px solid #db0f31;
+  border: 4px solid #3a90c8;
   width: 210px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2701,6 +2722,7 @@ ol li {
   font-size: 46px;
   margin-bottom: 30px;
   font-weight: bold;
+  color: #111;
 }
 @media only screen and (max-width: 768px) {
   .service-main__title {
@@ -2734,7 +2756,7 @@ ol li {
   left: 20px;
   top: -webkit-calc(50% - 5px);
   top: calc(50% - 5px);
-  background: #db0f31;
+  background: #3a90c8;
 }
 @media only screen and (max-width: 640px) {
   .service-main__list-el:before {
@@ -2764,7 +2786,7 @@ ol li {
   height: 100%;
   top: 0;
   left: 20%;
-  background: #db0f31;
+  background: #3a90c8;
   -webkit-transform: skew(30deg);
       -ms-transform: skew(30deg);
           transform: skew(30deg);
@@ -2777,7 +2799,7 @@ ol li {
 .main-content__figure {
   width: 90vw;
   height: 100%;
-  background: #db0f31;
+  background: #3a90c8;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   position: absolute;
@@ -2801,7 +2823,7 @@ ol li {
 .news-main__figure {
   width: 80%;
   height: 100%;
-  background: #db0f31;
+  background: #3a90c8;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   position: absolute;
@@ -2848,7 +2870,7 @@ ol li {
   fill: #111 !important;
 }
 .shrink .header-logo .icon {
-  fill: #db0f31 !important;
+  fill: #3a90c8 !important;
 }
 .header--main.shrink {
   padding: 0;
@@ -2887,6 +2909,7 @@ ol li {
   margin-bottom: 30px;
   font-family: Ubuntu;
   width: 90%;
+  color: #111;
 }
 @media only screen and (max-width: 1024px) {
   .service-full__title {
@@ -2907,6 +2930,7 @@ ol li {
 }
 .contact-form__title {
   margin-bottom: 30px;
+  color: #111;
 }
 @media only screen and (max-width: 480px) {
   .contact-form__cont input[type="submit"] {
@@ -2999,7 +3023,7 @@ ol li {
   height: 100%;
   top: 0;
   right: -50%;
-  background: #db0f31;
+  background: #3a90c8;
   -webkit-transform: skew(-15deg);
       -ms-transform: skew(-15deg);
           transform: skew(-15deg);
@@ -3058,6 +3082,12 @@ ol li {
             order: 2;
   }
 }
+.customer-about__title {
+  color: #111;
+}
+.customer-project__title {
+  color: #111;
+}
 .customer-project__tag {
   border-top: 1px solid #ededed;
   padding-top: 30px;
@@ -3072,7 +3102,7 @@ ol li {
 .customer-project__tag-el {
   display: inline-block;
   padding: 5px 10px;
-  background: #db0f31;
+  background: #3a90c8;
   color: #fff;
   font-size: 12px;
   margin-right: 5px;
@@ -3141,6 +3171,7 @@ ol li {
 .contact__phone {
   font-size: 100px;
   margin-bottom: 30px;
+  color: #111;
 }
 @media only screen and (max-width: 768px) {
   .contact__phone {
@@ -3211,7 +3242,7 @@ ol li {
   line-height: 1.6;
 }
 .mission__el--mark {
-  background: #db0f31;
+  background: #3a90c8;
   color: #fff;
 }
 .sert__title {
@@ -3324,20 +3355,20 @@ ol li {
   text-transform: uppercase;
 }
 .field-error .input {
-  border: 1px solid #db0f31;
+  border: 1px solid #3a90c8;
   margin-bottom: 0px;
 }
 .field-error .error {
   margin-top: -20px;
   margin-bottom: 20px;
   display: inline-block;
-  color: #db0f31;
+  color: #3a90c8;
 }
 .agree-row .error {
   display: none;
 }
 .agree-row .field-error .sytle-input-element {
-  border: 1px solid #db0f31;
+  border: 1px solid #3a90c8;
 }
 .modal-layer {
   width: 100%;
